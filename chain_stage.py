@@ -68,19 +68,59 @@ def _commit(request: dict, result: tuple[dict, int]) -> tuple[dict, int]:
     return result
 
 
-def _hub_root() -> Path | None:
+_LOCATOR = None
+
+
+def _locator():
+    global _LOCATOR
+    if _LOCATOR is False:
+        return None
+    if _LOCATOR is not None:
+        return _LOCATOR
+    import importlib.util
+
+    script = _locate_script()
+    if script is None:
+        _LOCATOR = False
+        return None
+    spec = importlib.util.spec_from_file_location("skintwin_chain_locate", script)
+    if spec is None or spec.loader is None:
+        _LOCATOR = False
+        return None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    _LOCATOR = module
+    return module
+
+
+def _locate_script() -> Path | None:
     override = os.environ.get("SKINTWIN_HUB_ROOT")
-    candidates = [Path(override)] if override else []
-    candidates.extend(
-        [
-            Path("/agent/repos/skintwin-ecosystem-design"),
-            Path("/workspace/repos/skintwin-ecosystem-design"),
-        ]
-    )
-    for candidate in candidates:
-        if (candidate / "domain" / "ledger.py").is_file():
-            return candidate
+    if override:
+        script = Path(override) / "domain" / "locate.py"
+        if script.is_file() and (Path(override) / "domain" / "org-ecosystem.json").is_file():
+            return script
+    start = Path(__file__).resolve()
+    for parent in [start, *start.parents]:
+        if not (parent / ".git").exists():
+            continue
+        try:
+            children = list(parent.parent.iterdir())
+        except OSError:
+            return None
+        for child in children:
+            script = child / "domain" / "locate.py"
+            if script.is_file() and (child / "domain" / "org-ecosystem.json").is_file():
+                return script
+        return None
     return None
+
+
+def _hub_root() -> Path | None:
+    locator = _locator()
+    if locator is None:
+        return None
+    found = locator.find_hub()
+    return Path(found) if found else None
 
 
 def main() -> None:

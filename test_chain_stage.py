@@ -42,7 +42,6 @@ class OutcomeRouteTests(unittest.TestCase):
             ledger = Path(tmp) / "supply-chain.jsonl"
             previous = os.environ.get("SKINTWIN_CHAIN_LEDGER")
             os.environ["SKINTWIN_CHAIN_LEDGER"] = str(ledger)
-            os.environ["SKINTWIN_HUB_ROOT"] = "/agent/repos/skintwin-ecosystem-design"
             try:
                 body, status = respond(
                     {
