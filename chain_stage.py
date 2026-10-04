@@ -13,8 +13,15 @@ class StageRejection(ValueError):
     pass
 
 
+def _whole_score(value: object) -> object:
+    """A digit string is that integer. A word is left as written."""
+    if isinstance(value, str) and value.strip().isdigit():
+        return int(value.strip())
+    return value
+
+
 def record_outcome(args: dict) -> dict:
-    score = args.get("score")
+    score = _whole_score(args.get("score"))
     if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:
         raise StageRejection("score must be an integer from 0 to 100")
     return {
@@ -32,7 +39,8 @@ def respond(body: dict) -> tuple[dict, int]:
         artifact = record_outcome(body.get("args") or {})
     except StageRejection as exc:
         return {"ok": False, "error": str(exc)}, 400
-    return _commit(body, ({"ok": True, "artifact": artifact}, 200))
+    recorded = {"command": "record_outcome", "args": artifact}
+    return _commit(recorded, ({"ok": True, "artifact": artifact}, 200))
 
 
 def _text(value: object, label: str) -> str:
