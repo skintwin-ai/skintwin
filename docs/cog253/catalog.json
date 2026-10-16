@@ -1,0 +1,3882 @@
+{
+  "version": "1.0.0",
+  "total_patterns": 253,
+  "categories": {
+    "cat1_cognitive_ecosystems": {
+      "range": "cog001-cog094",
+      "count": 94
+    },
+    "cat2_cognitive_subsystems": {
+      "range": "cog095-cog204",
+      "count": 110
+    },
+    "cat3_cognitive_primitives": {
+      "range": "cog205-cog253",
+      "count": 49
+    }
+  },
+  "patterns": [
+    {
+      "id": "cog001",
+      "name": "INDEPENDENT COGNITIVE ARCHITECTURES",
+      "gh": "INDEPENDENT ENTERPRISES",
+      "interpretation": "Multiple AGI approaches (symbolic, connectionist, hybrid) co-exist as independent research programs, each with its own knowledge representation.",
+      "components": [
+        "opencog",
+        "atomspace"
+      ],
+      "related": [
+        "cog002",
+        "cog003",
+        "cog007"
+      ]
+    },
+    {
+      "id": "cog002",
+      "name": "THE DISTRIBUTION OF COGNITIVE SUBSYSTEMS",
+      "gh": "THE DISTRIBUTION OF ORGANISATIONS",
+      "interpretation": "Cognitive subsystems (perception, reasoning, learning, action) distribute across the architecture following natural information-flow boundaries.",
+      "components": [
+        "atomspace",
+        "cogserver",
+        "sensory"
+      ],
+      "related": [
+        "cog001",
+        "cog009",
+        "cog035"
+      ]
+    },
+    {
+      "id": "cog003",
+      "name": "COGNITIVE ECOSYSTEM FINGERS",
+      "gh": "ENTERPRISE ECOSYSTEM FINGERS",
+      "interpretation": "Symbolic and sub-symbolic processing interleave like fingers \u00e2\u20ac\u201d neither dominates; they interpenetrate at every scale.",
+      "components": [
+        "atomspace",
+        "atomspace-metta"
+      ],
+      "related": [
+        "cog001",
+        "cog007",
+        "cog008"
+      ]
+    },
+    {
+      "id": "cog004",
+      "name": "LEARNING VALLEYS",
+      "gh": "DEVELOPMENT VALLEYS",
+      "interpretation": "Deep specialization channels where intensive learning occurs \u00e2\u20ac\u201d MOSES evolving programs, PLN refining beliefs, miner discovering patterns.",
+      "components": [
+        "asmoses",
+        "pln",
+        "miner"
+      ],
+      "related": [
+        "cog003",
+        "cog025",
+        "cog064"
+      ]
+    },
+    {
+      "id": "cog005",
+      "name": "LACE OF INFERENCE PATHS",
+      "gh": "LACE OF INTEGRATION PATHS",
+      "interpretation": "Inference chains form a lace-like network \u00e2\u20ac\u201d no single path dominates; multiple reasoning routes reach the same conclusion with different confidence.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog016",
+        "cog049",
+        "cog052"
+      ]
+    },
+    {
+      "id": "cog006",
+      "name": "SATELLITE COGNITIVE MODULES",
+      "gh": "SATELLITE ORGANISATIONS",
+      "interpretation": "Peripheral cognitive modules (vision, motor, NLP) orbit the central AtomSpace, connecting when needed but maintaining autonomy.",
+      "components": [
+        "sensory",
+        "vision",
+        "motor",
+        "agents"
+      ],
+      "related": [
+        "cog001",
+        "cog009",
+        "cog020"
+      ]
+    },
+    {
+      "id": "cog007",
+      "name": "THE OPEN COGNITIVE ECOSYSTEM",
+      "gh": "THE OPEN SOURCE ECOSYSTEM",
+      "interpretation": "The broader landscape of cognitive science tools, frameworks, and theories from which OpenCog draws and to which it contributes.",
+      "components": [
+        "link-grammar",
+        "atomspace-metta"
+      ],
+      "related": [
+        "cog001",
+        "cog003",
+        "cog043"
+      ]
+    },
+    {
+      "id": "cog008",
+      "name": "MOSAIC OF REPRESENTATIONS",
+      "gh": "MOSAIC OF TECH STACKS",
+      "interpretation": "Multiple knowledge representations coexist: Atomese, Link Grammar, probabilistic weights, attention values \u00e2\u20ac\u201d each suited to different cognitive tasks.",
+      "components": [
+        "atomspace",
+        "link-grammar",
+        "matrix"
+      ],
+      "related": [
+        "cog003",
+        "cog035",
+        "cog027"
+      ]
+    },
+    {
+      "id": "cog009",
+      "name": "DISTRIBUTED COGNITION",
+      "gh": "DISTRIBUTED DEVELOPMENT",
+      "interpretation": "Cognitive processing distributes across networked AtomSpaces \u00e2\u20ac\u201d no single node holds all knowledge; federation enables scale.",
+      "components": [
+        "atomspace-cog",
+        "atomspace-dht",
+        "atomspace-ipfs"
+      ],
+      "related": [
+        "cog002",
+        "cog006",
+        "cog034"
+      ]
+    },
+    {
+      "id": "cog010",
+      "name": "MAGIC OF THE HYPERGRAPH",
+      "gh": "MAGIC OF THE PLATFORM",
+      "interpretation": "The AtomSpace hypergraph enables emergent cognitive phenomena that no single subsystem could produce \u00e2\u20ac\u201d the whole exceeds the sum.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog024",
+        "cog066",
+        "cog025"
+      ]
+    },
+    {
+      "id": "cog011",
+      "name": "LOCAL INFERENCE AREAS",
+      "gh": "LOCAL CI/CD AREAS",
+      "interpretation": "Inference bounded to local subgraphs \u00e2\u20ac\u201d reasoning scoped to relevant context rather than the entire knowledge base.",
+      "components": [
+        "ure",
+        "pln",
+        "attention"
+      ],
+      "related": [
+        "cog005",
+        "cog042",
+        "cog049"
+      ]
+    },
+    {
+      "id": "cog012",
+      "name": "COMMUNITY OF COGNITIVE AGENTS",
+      "gh": "COMMUNITY OF DEVELOPERS",
+      "interpretation": "Multiple cognitive agents cohabit the AtomSpace, each specializing in different tasks while sharing the common knowledge substrate.",
+      "components": [
+        "atomspace-agents",
+        "agents",
+        "attention"
+      ],
+      "related": [
+        "cog041",
+        "cog075",
+        "cog080"
+      ]
+    },
+    {
+      "id": "cog013",
+      "name": "COGNITIVE BOUNDARY",
+      "gh": "TEAM BOUNDARY",
+      "interpretation": "Clear boundaries between cognitive subsystems \u00e2\u20ac\u201d perception doesn't directly write motor commands; information flows through defined interfaces.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog014",
+        "cog015",
+        "cog036"
+      ]
+    },
+    {
+      "id": "cog014",
+      "name": "IDENTIFIABLE COGNITIVE MODULE",
+      "gh": "IDENTIFIABLE TEAM",
+      "interpretation": "Each cognitive module has a clear identity, purpose, and interface \u00e2\u20ac\u201d you can point to 'the reasoner' or 'the pattern miner' as distinct entities.",
+      "components": [
+        "ure",
+        "miner",
+        "attention",
+        "asmoses"
+      ],
+      "related": [
+        "cog013",
+        "cog015",
+        "cog037"
+      ]
+    },
+    {
+      "id": "cog015",
+      "name": "MODULE SCOPE BOUNDARY",
+      "gh": "TEAM SCOPE BOUNDARY",
+      "interpretation": "Each module's scope is explicitly bounded \u00e2\u20ac\u201d PLN reasons over probabilistic logic, not motor control; ECAN allocates attention, not memory.",
+      "components": [
+        "pln",
+        "attention",
+        "miner"
+      ],
+      "related": [
+        "cog013",
+        "cog014",
+        "cog021"
+      ]
+    },
+    {
+      "id": "cog016",
+      "name": "WEB OF PUBLIC ATOM TYPES",
+      "gh": "WEB OF PUBLIC APIS",
+      "interpretation": "The shared Atom type hierarchy forms a public API \u00e2\u20ac\u201d any module can create/read Atoms of public types, enabling interoperability.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog005",
+        "cog028",
+        "cog052"
+      ]
+    },
+    {
+      "id": "cog017",
+      "name": "RING OF COGNITIVE FEEDBACK",
+      "gh": "RING INTEGRATIONS",
+      "interpretation": "Perception-cognition-action loops form rings \u00e2\u20ac\u201d sensory input drives reasoning, reasoning drives action, action changes perception.",
+      "components": [
+        "sensory",
+        "ure",
+        "motor"
+      ],
+      "related": [
+        "cog005",
+        "cog049",
+        "cog052"
+      ]
+    },
+    {
+      "id": "cog018",
+      "name": "NETWORK OF LEARNING",
+      "gh": "NETWORK OF LEARNING",
+      "interpretation": "Learning subsystems form a network \u00e2\u20ac\u201d MOSES learns programs, PLN learns beliefs, the miner learns patterns, each feeding the others.",
+      "components": [
+        "asmoses",
+        "pln",
+        "miner",
+        "learn"
+      ],
+      "related": [
+        "cog004",
+        "cog043",
+        "cog085"
+      ]
+    },
+    {
+      "id": "cog019",
+      "name": "WEB OF KNOWLEDGE STORES",
+      "gh": "WEB OF PACKAGE REGISTRIES",
+      "interpretation": "Multiple storage backends (RocksDB, PostgreSQL, CogServer network) form a web of persistent knowledge accessible to all subsystems.",
+      "components": [
+        "atomspace-rocks",
+        "atomspace-pgres",
+        "atomspace-cog",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog009",
+        "cog025",
+        "cog046"
+      ]
+    },
+    {
+      "id": "cog020",
+      "name": "MICRO-AGENTS",
+      "gh": "MICROSERVICES",
+      "interpretation": "Small, focused cognitive agents that handle one task \u00e2\u20ac\u201d a link-type checker, a truth-value updater, an attention redistributor.",
+      "components": [
+        "atomspace-agents",
+        "attention"
+      ],
+      "related": [
+        "cog006",
+        "cog081",
+        "cog074"
+      ]
+    },
+    {
+      "id": "cog021",
+      "name": "FOUR-LAYER COGNITIVE LIMIT",
+      "gh": "FOUR-LAYER LIMIT",
+      "interpretation": "Cognitive processing should not exceed ~4 levels of abstraction in a single inference step \u00e2\u20ac\u201d deeper reasoning must be chunked.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog015",
+        "cog039",
+        "cog096"
+      ]
+    },
+    {
+      "id": "cog022",
+      "name": "NINE PERCENT METACOGNITION",
+      "gh": "NINE PERCENT OVERHEAD",
+      "interpretation": "~9% of cognitive resources should go to metacognition (monitoring, attention allocation) \u00e2\u20ac\u201d too little loses coherence, too much wastes capacity.",
+      "components": [
+        "attention"
+      ],
+      "related": [
+        "cog021",
+        "cog042",
+        "cog055"
+      ]
+    },
+    {
+      "id": "cog023",
+      "name": "PARALLEL INFERENCE PIPELINES",
+      "gh": "PARALLEL PIPELINES",
+      "interpretation": "Multiple inference chains execute in parallel \u00e2\u20ac\u201d forward chaining, backward chaining, and pattern matching run concurrently on shared AtomSpace.",
+      "components": [
+        "ure",
+        "pln",
+        "miner"
+      ],
+      "related": [
+        "cog005",
+        "cog042",
+        "cog011"
+      ]
+    },
+    {
+      "id": "cog024",
+      "name": "SACRED KNOWLEDGE STRUCTURES",
+      "gh": "SACRED REPOSITORIES",
+      "interpretation": "Core ontological structures (type hierarchy, fundamental inference rules) that must not be corrupted \u00e2\u20ac\u201d they are the bedrock of all reasoning.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog010",
+        "cog066",
+        "cog097"
+      ]
+    },
+    {
+      "id": "cog025",
+      "name": "ACCESS TO EXPERIENCE",
+      "gh": "ACCESS TO DATA",
+      "interpretation": "Every cognitive module must have access to the experiential stream \u00e2\u20ac\u201d raw percepts, grounded symbols, embodied knowledge.",
+      "components": [
+        "sensory",
+        "atomspace",
+        "learn"
+      ],
+      "related": [
+        "cog010",
+        "cog019",
+        "cog064"
+      ]
+    },
+    {
+      "id": "cog026",
+      "name": "COGNITIVE LIFE CYCLE",
+      "gh": "SOFTWARE LIFE CYCLE",
+      "interpretation": "Knowledge has a life cycle: acquisition \u00e2\u2020\u2019 integration \u00e2\u2020\u2019 consolidation \u00e2\u2020\u2019 retrieval \u00e2\u2020\u2019 revision \u00e2\u2020\u2019 forgetting. Systems must support all phases.",
+      "components": [
+        "atomspace",
+        "attention",
+        "learn"
+      ],
+      "related": [
+        "cog070",
+        "cog071",
+        "cog040"
+      ]
+    },
+    {
+      "id": "cog027",
+      "name": "SYMBOLIC AND SUBSYMBOLIC",
+      "gh": "FRONTEND AND BACKEND",
+      "interpretation": "The symbolic layer (Atomese, logic) faces the reasoning; the subsymbolic layer (embeddings, attention values) provides the grounding.",
+      "components": [
+        "atomspace",
+        "matrix",
+        "attention"
+      ],
+      "related": [
+        "cog003",
+        "cog008",
+        "cog035"
+      ]
+    },
+    {
+      "id": "cog028",
+      "name": "ATTENTION GATEWAY",
+      "gh": "API GATEWAY",
+      "interpretation": "ECAN acts as the gateway \u00e2\u20ac\u201d controlling which Atoms get processing resources, routing attention to relevant subgraphs.",
+      "components": [
+        "attention"
+      ],
+      "related": [
+        "cog016",
+        "cog022",
+        "cog055"
+      ]
+    },
+    {
+      "id": "cog029",
+      "name": "DEPENDENCY RINGS OF COGNITION",
+      "gh": "DEPENDENCY RINGS",
+      "interpretation": "Circular dependencies in cognition are natural: perception needs concepts, concepts need perception. Managed through iterative refinement.",
+      "components": [
+        "atomspace",
+        "ure",
+        "sensory"
+      ],
+      "related": [
+        "cog017",
+        "cog039",
+        "cog049"
+      ]
+    },
+    {
+      "id": "cog030",
+      "name": "COGNITIVE ACTIVITY NODES",
+      "gh": "ACTIVITY NODES",
+      "interpretation": "Hot spots in the AtomSpace where processing concentrates \u00e2\u20ac\u201d frequently accessed Atoms with high STI form natural activity clusters.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog028",
+        "cog011",
+        "cog062"
+      ]
+    },
+    {
+      "id": "cog031",
+      "name": "COGNITIVE PORTAL",
+      "gh": "DEVELOPER PORTAL",
+      "interpretation": "A unified interface for inspecting, querying, and interacting with the cognitive system \u00e2\u20ac\u201d the CogServer shell and REST APIs.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-websockets"
+      ],
+      "related": [
+        "cog060",
+        "cog062",
+        "cog069"
+      ]
+    },
+    {
+      "id": "cog032",
+      "name": "KNOWLEDGE MARKETPLACE",
+      "gh": "MARKETPLACE",
+      "interpretation": "A space where learned knowledge, rules, and patterns can be shared between cognitive instances \u00e2\u20ac\u201d federated AtomSpaces as a knowledge market.",
+      "components": [
+        "atomspace-cog",
+        "atomspace-dht"
+      ],
+      "related": [
+        "cog009",
+        "cog019",
+        "cog043"
+      ]
+    },
+    {
+      "id": "cog033",
+      "name": "BACKGROUND COGNITION",
+      "gh": "ASYNC OPERATIONS",
+      "interpretation": "Non-urgent cognitive tasks (memory consolidation, belief revision, garbage collection) run asynchronously in the background.",
+      "components": [
+        "attention",
+        "cogserver"
+      ],
+      "related": [
+        "cog022",
+        "cog074",
+        "cog049"
+      ]
+    },
+    {
+      "id": "cog034",
+      "name": "COGNITIVE MESSAGE PASSING",
+      "gh": "MESSAGE BROKER",
+      "interpretation": "Inter-module communication via Atoms \u00e2\u20ac\u201d modules write structured messages into the AtomSpace rather than calling each other directly.",
+      "components": [
+        "atomspace",
+        "atomspace-cog",
+        "cogserver"
+      ],
+      "related": [
+        "cog009",
+        "cog016",
+        "cog082"
+      ]
+    },
+    {
+      "id": "cog035",
+      "name": "REPRESENTATION MIX",
+      "gh": "TECHNOLOGY MIX",
+      "interpretation": "Healthy cognitive systems use multiple representation formats \u00e2\u20ac\u201d logical atoms, probabilistic weights, distributed vectors, temporal sequences.",
+      "components": [
+        "atomspace",
+        "matrix",
+        "pln"
+      ],
+      "related": [
+        "cog008",
+        "cog027",
+        "cog003"
+      ]
+    },
+    {
+      "id": "cog036",
+      "name": "DEGREES OF COGNITIVE ACCESS",
+      "gh": "DEGREES OF VISIBILITY",
+      "interpretation": "Different levels of access to knowledge: subconscious (low STI), preconscious (medium), conscious (high STI/attentional focus).",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog013",
+        "cog028",
+        "cog055"
+      ]
+    },
+    {
+      "id": "cog037",
+      "name": "KNOWLEDGE CLUSTER",
+      "gh": "REPOSITORY CLUSTER",
+      "interpretation": "Related Atoms naturally cluster into conceptual neighborhoods \u00e2\u20ac\u201d semantic similarity creates implicit groupings in the hypergraph.",
+      "components": [
+        "atomspace",
+        "miner"
+      ],
+      "related": [
+        "cog014",
+        "cog030",
+        "cog038"
+      ]
+    },
+    {
+      "id": "cog038",
+      "name": "MONOLITHIC KNOWLEDGE BASE",
+      "gh": "MONOREPO PACKAGES",
+      "interpretation": "All knowledge resides in a single hypergraph (the AtomSpace) rather than fragmented stores \u00e2\u20ac\u201d unified access, unified queries.",
+      "components": [
+        "atomspace",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog037",
+        "cog039",
+        "cog019"
+      ]
+    },
+    {
+      "id": "cog039",
+      "name": "ABSTRACTION HIERARCHY",
+      "gh": "DEPENDENCY HIERARCHY",
+      "interpretation": "Concepts form a strict abstraction hierarchy \u00e2\u20ac\u201d concrete percepts \u00e2\u2020\u2019 features \u00e2\u2020\u2019 concepts \u00e2\u2020\u2019 abstractions \u00e2\u2020\u2019 meta-concepts.",
+      "components": [
+        "atomspace",
+        "pln",
+        "learn"
+      ],
+      "related": [
+        "cog021",
+        "cog029",
+        "cog116"
+      ]
+    },
+    {
+      "id": "cog040",
+      "name": "LEGACY KNOWLEDGE EVERYWHERE",
+      "gh": "LEGACY CODE EVERYWHERE",
+      "interpretation": "Old beliefs, outdated models, and superseded theories persist in the knowledge base \u00e2\u20ac\u201d revision is gradual, not wholesale replacement.",
+      "components": [
+        "atomspace",
+        "attention"
+      ],
+      "related": [
+        "cog026",
+        "cog070",
+        "cog155"
+      ]
+    },
+    {
+      "id": "cog041",
+      "name": "COGNITIVE COMMUNITY",
+      "gh": "DEVELOPMENT COMMUNITY",
+      "interpretation": "The community of researchers, developers, and AI agents that collectively advance the cognitive architecture.",
+      "components": [
+        "opencog"
+      ],
+      "related": [
+        "cog012",
+        "cog057",
+        "cog080"
+      ]
+    },
+    {
+      "id": "cog042",
+      "name": "INFERENCE PIPELINE",
+      "gh": "CI/CD RIBBON",
+      "interpretation": "The continuous inference pipeline: perceive \u00e2\u2020\u2019 attend \u00e2\u2020\u2019 retrieve \u00e2\u2020\u2019 reason \u00e2\u2020\u2019 decide \u00e2\u2020\u2019 act \u00e2\u2020\u2019 learn \u00e2\u20ac\u201d always running, never idle.",
+      "components": [
+        "ure",
+        "attention",
+        "sensory",
+        "motor"
+      ],
+      "related": [
+        "cog023",
+        "cog011",
+        "cog017"
+      ]
+    },
+    {
+      "id": "cog043",
+      "name": "COGNITIVE SCIENCE MARKETPLACE",
+      "gh": "GITHUB AS A MARKETPLACE",
+      "interpretation": "The broader cognitive science community as a source of theories, algorithms, and benchmarks that OpenCog integrates.",
+      "components": [
+        "opencog",
+        "atomspace-metta"
+      ],
+      "related": [
+        "cog007",
+        "cog018",
+        "cog032"
+      ]
+    },
+    {
+      "id": "cog044",
+      "name": "LOCAL COGNITIVE GOVERNANCE",
+      "gh": "LOCAL GOVERNANCE",
+      "interpretation": "Each cognitive subsystem self-governs within its scope \u00e2\u20ac\u201d the URE manages its own rule selection, ECAN manages its own budget.",
+      "components": [
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog015",
+        "cog080",
+        "cog022"
+      ]
+    },
+    {
+      "id": "cog045",
+      "name": "NECKLACE OF COGNITIVE EXPERIMENTS",
+      "gh": "NECKLACE OF COMMUNITY PROJECTS",
+      "interpretation": "A chain of experimental cognitive configurations \u00e2\u20ac\u201d each testing a different hypothesis about intelligence.",
+      "components": [
+        "rocca",
+        "agents",
+        "evidence"
+      ],
+      "related": [
+        "cog041",
+        "cog058",
+        "cog073"
+      ]
+    },
+    {
+      "id": "cog046",
+      "name": "REGISTRY OF ATOM TYPES",
+      "gh": "REGISTRY OF MANY PACKAGES",
+      "interpretation": "The Atom type registry \u00e2\u20ac\u201d a catalogue of all Node and Link types available in the system, extensible by any module.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog016",
+        "cog019",
+        "cog032"
+      ]
+    },
+    {
+      "id": "cog047",
+      "name": "COGNITIVE INTEGRITY CENTER",
+      "gh": "SECURITY CENTER",
+      "interpretation": "Mechanisms ensuring knowledge integrity \u00e2\u20ac\u201d truth value consistency checking, contradiction detection, belief revision.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog024",
+        "cog097",
+        "cog051"
+      ]
+    },
+    {
+      "id": "cog048",
+      "name": "SHARED COGNITIVE LIBRARIES",
+      "gh": "SHARED LIBRARIES",
+      "interpretation": "Reusable cognitive primitives \u00e2\u20ac\u201d pattern matching utilities, truth value operations, attention value arithmetic \u00e2\u20ac\u201d shared across all modules.",
+      "components": [
+        "cogutil",
+        "atomspace"
+      ],
+      "related": [
+        "cog019",
+        "cog038",
+        "cog129"
+      ]
+    },
+    {
+      "id": "cog049",
+      "name": "LOOPED COGNITIVE WORKFLOWS",
+      "gh": "LOOPED WORKFLOWS",
+      "interpretation": "Cognitive processes naturally loop \u00e2\u20ac\u201d perceive-reason-act cycles, belief-revision cycles, attention-redistribution cycles.",
+      "components": [
+        "ure",
+        "attention",
+        "sensory"
+      ],
+      "related": [
+        "cog017",
+        "cog029",
+        "cog042"
+      ]
+    },
+    {
+      "id": "cog050",
+      "name": "MERGE POINTS OF KNOWLEDGE",
+      "gh": "MERGE POINTS",
+      "interpretation": "Points where multiple inference chains converge on a single conclusion \u00e2\u20ac\u201d consensus strengthens beliefs.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog005",
+        "cog023",
+        "cog054"
+      ]
+    },
+    {
+      "id": "cog051",
+      "name": "GREEN INFERENCES",
+      "gh": "GREEN BUILDS",
+      "interpretation": "Valid inference chains \u00e2\u20ac\u201d conclusions that follow from premises without logical errors or unjustified confidence inflation.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog047",
+        "cog042",
+        "cog097"
+      ]
+    },
+    {
+      "id": "cog052",
+      "name": "NETWORK OF INFERENCE PATHS",
+      "gh": "NETWORK OF PATHS",
+      "interpretation": "The full network of possible inference routes through the knowledge base \u00e2\u20ac\u201d a lattice of logical connections.",
+      "components": [
+        "ure",
+        "pln",
+        "atomspace"
+      ],
+      "related": [
+        "cog005",
+        "cog016",
+        "cog017"
+      ]
+    },
+    {
+      "id": "cog053",
+      "name": "MAIN COGNITIVE GATEWAYS",
+      "gh": "MAIN GATEWAYS",
+      "interpretation": "Primary entry points into the cognitive system \u00e2\u20ac\u201d the CogServer shell, REST API, Scheme REPL, Python bindings.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-websockets"
+      ],
+      "related": [
+        "cog031",
+        "cog028",
+        "cog060"
+      ]
+    },
+    {
+      "id": "cog054",
+      "name": "CONCEPT CROSSING",
+      "gh": "BRANCH CROSSING",
+      "interpretation": "Points where different conceptual domains intersect \u00e2\u20ac\u201d where linguistic knowledge meets visual knowledge, creating cross-modal links.",
+      "components": [
+        "atomspace",
+        "lg-atomese",
+        "sensory"
+      ],
+      "related": [
+        "cog050",
+        "cog003",
+        "cog008"
+      ]
+    },
+    {
+      "id": "cog055",
+      "name": "ELEVATED ATTENTION",
+      "gh": "ELEVATED PERMISSIONS",
+      "interpretation": "High-STI Atoms receive elevated processing priority \u00e2\u20ac\u201d they get more inference cycles, more memory, more access to resources.",
+      "components": [
+        "attention"
+      ],
+      "related": [
+        "cog028",
+        "cog036",
+        "cog022"
+      ]
+    },
+    {
+      "id": "cog056",
+      "name": "QUICK COGNITIVE REFLEXES",
+      "gh": "QUICK ACTIONS",
+      "interpretation": "Fast, pre-compiled cognitive responses \u00e2\u20ac\u201d cached inference results, habitual action sequences, reflexive reactions.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog033",
+        "cog042",
+        "cog074"
+      ]
+    },
+    {
+      "id": "cog057",
+      "name": "NEWCOMERS IN COGNITIVE SCIENCE",
+      "gh": "NEWCOMERS IN THE PROJECT",
+      "interpretation": "New contributors to the cognitive architecture \u00e2\u20ac\u201d onboarding paths from simple demos to core AtomSpace hacking.",
+      "components": [
+        "opencog"
+      ],
+      "related": [
+        "cog041",
+        "cog060",
+        "cog085"
+      ]
+    },
+    {
+      "id": "cog058",
+      "name": "COGNITIVE HACKATHON",
+      "gh": "HACKATHON",
+      "interpretation": "Intensive experimental sessions exploring new cognitive hypotheses \u00e2\u20ac\u201d rapid prototyping of new Atom types, rules, or agent designs.",
+      "components": [
+        "agents",
+        "rocca",
+        "evidence"
+      ],
+      "related": [
+        "cog045",
+        "cog073",
+        "cog041"
+      ]
+    },
+    {
+      "id": "cog059",
+      "name": "PRIVATE COGNITIVE WORKSPACE",
+      "gh": "PRIVATE REPOS",
+      "interpretation": "Internal cognitive state not exposed to external queries \u00e2\u20ac\u201d working memory, intermediate inference results, draft hypotheses.",
+      "components": [
+        "atomspace",
+        "attention"
+      ],
+      "related": [
+        "cog036",
+        "cog069",
+        "cog140"
+      ]
+    },
+    {
+      "id": "cog060",
+      "name": "ACCESSIBLE KNOWLEDGE",
+      "gh": "ACCESSIBLE DOCS",
+      "interpretation": "Knowledge should be queryable and explainable \u00e2\u20ac\u201d not just stored but retrievable in human-interpretable form.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-explorer"
+      ],
+      "related": [
+        "cog031",
+        "cog053",
+        "cog069"
+      ]
+    },
+    {
+      "id": "cog061",
+      "name": "COGNITIVE DISCUSSION FORUMS",
+      "gh": "DISCUSSION FORUMS",
+      "interpretation": "Spaces where cognitive hypotheses are debated \u00e2\u20ac\u201d multiple inference paths propose competing conclusions, resolved by evidence.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog050",
+        "cog047",
+        "cog115"
+      ]
+    },
+    {
+      "id": "cog062",
+      "name": "METACOGNITIVE DASHBOARDS",
+      "gh": "OVERVIEW DASHBOARDS",
+      "interpretation": "High-level views of cognitive state \u00e2\u20ac\u201d attention distribution, inference load, memory utilization, goal progress.",
+      "components": [
+        "attention",
+        "cogserver",
+        "atomspace-explorer"
+      ],
+      "related": [
+        "cog030",
+        "cog031",
+        "cog022"
+      ]
+    },
+    {
+      "id": "cog063",
+      "name": "LIVE COGNITIVE COLLABORATION",
+      "gh": "LIVE COLLABORATION",
+      "interpretation": "Multiple cognitive agents collaborating in real-time on shared problems \u00e2\u20ac\u201d distributed inference across networked AtomSpaces.",
+      "components": [
+        "atomspace-cog",
+        "atomspace-agents"
+      ],
+      "related": [
+        "cog009",
+        "cog012",
+        "cog032"
+      ]
+    },
+    {
+      "id": "cog064",
+      "name": "EXPERIENTIAL STREAMS",
+      "gh": "DATA STREAMS",
+      "interpretation": "Continuous streams of sensory experience flowing into the AtomSpace \u00e2\u20ac\u201d time-stamped, grounded, embodied data.",
+      "components": [
+        "sensory",
+        "spacetime"
+      ],
+      "related": [
+        "cog025",
+        "cog004",
+        "cog017"
+      ]
+    },
+    {
+      "id": "cog065",
+      "name": "COGNITIVE TEMPLATES",
+      "gh": "PROJECT TEMPLATES",
+      "interpretation": "Reusable cognitive design patterns \u00e2\u20ac\u201d template rules, template schemas, prototype Atom structures that seed new reasoning.",
+      "components": [
+        "ure",
+        "atomspace"
+      ],
+      "related": [
+        "cog086",
+        "cog093",
+        "cog085"
+      ]
+    },
+    {
+      "id": "cog066",
+      "name": "CORE KNOWLEDGE STRUCTURES",
+      "gh": "CORE REPOSITORIES",
+      "interpretation": "The irreducible core: type hierarchy, fundamental logical connectives, basic truth value operations \u00e2\u20ac\u201d without which nothing works.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog024",
+        "cog010",
+        "cog048"
+      ]
+    },
+    {
+      "id": "cog067",
+      "name": "COGNITIVE COMMONS",
+      "gh": "COMMONS",
+      "interpretation": "Shared knowledge accessible to all subsystems \u00e2\u20ac\u201d the common ontology, shared inference rules, universal Atom types.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog038",
+        "cog048",
+        "cog016"
+      ]
+    },
+    {
+      "id": "cog068",
+      "name": "CONNECTED COGNITIVE PLAY",
+      "gh": "CONNECTED DEVELOPMENT",
+      "interpretation": "Experimental cognitive modules connected to the live system \u00e2\u20ac\u201d agents can try new strategies while grounded in real knowledge.",
+      "components": [
+        "agents",
+        "rocca",
+        "evidence"
+      ],
+      "related": [
+        "cog045",
+        "cog058",
+        "cog073"
+      ]
+    },
+    {
+      "id": "cog069",
+      "name": "PUBLIC COGNITIVE WORKSPACE",
+      "gh": "PUBLIC WORKSPACE",
+      "interpretation": "The externally visible portion of cognitive state \u00e2\u20ac\u201d published beliefs, declared goals, observable behaviors.",
+      "components": [
+        "cogserver",
+        "atomspace-restful"
+      ],
+      "related": [
+        "cog059",
+        "cog060",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog070",
+      "name": "ARCHIVED KNOWLEDGE",
+      "gh": "ARCHIVED REPOSITORIES",
+      "interpretation": "Superseded beliefs, deprecated inference rules, and obsolete models \u00e2\u20ac\u201d kept for reference but excluded from active reasoning.",
+      "components": [
+        "atomspace",
+        "attention"
+      ],
+      "related": [
+        "cog026",
+        "cog040",
+        "cog155"
+      ]
+    },
+    {
+      "id": "cog071",
+      "name": "STABLE BELIEFS",
+      "gh": "STABLE RELEASES",
+      "interpretation": "Well-established knowledge with high confidence \u00e2\u20ac\u201d beliefs that have survived extensive testing and revision.",
+      "components": [
+        "pln",
+        "atomspace"
+      ],
+      "related": [
+        "cog026",
+        "cog051",
+        "cog156"
+      ]
+    },
+    {
+      "id": "cog072",
+      "name": "LOCAL HYPOTHESIS TESTING",
+      "gh": "LOCAL TESTING",
+      "interpretation": "Testing hypotheses against local evidence before committing to the global knowledge base \u00e2\u20ac\u201d sandboxed inference.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog073",
+        "cog051",
+        "cog011"
+      ]
+    },
+    {
+      "id": "cog073",
+      "name": "COGNITIVE SANDBOX",
+      "gh": "SANDBOX ENVIRONMENT",
+      "interpretation": "Isolated environments for testing new cognitive strategies without contaminating the main knowledge base.",
+      "components": [
+        "atomspace",
+        "agents"
+      ],
+      "related": [
+        "cog072",
+        "cog058",
+        "cog068"
+      ]
+    },
+    {
+      "id": "cog074",
+      "name": "COGNITIVE BOTS",
+      "gh": "BOTS",
+      "interpretation": "Automated cognitive micro-agents \u00e2\u20ac\u201d truth value updaters, attention redistributors, garbage collectors, consistency checkers.",
+      "components": [
+        "atomspace-agents",
+        "attention"
+      ],
+      "related": [
+        "cog020",
+        "cog033",
+        "cog056"
+      ]
+    },
+    {
+      "id": "cog075",
+      "name": "THE CORE COGNITIVE TEAM",
+      "gh": "THE MAINTAINER TEAM",
+      "interpretation": "The set of tightly-coupled core subsystems that form the cognitive kernel \u00e2\u20ac\u201d atomspace + attention + ure + pattern matcher.",
+      "components": [
+        "atomspace",
+        "attention",
+        "ure",
+        "unify"
+      ],
+      "related": [
+        "cog012",
+        "cog066",
+        "cog076"
+      ]
+    },
+    {
+      "id": "cog076",
+      "name": "COGNITIVE MODULE FOR A SMALL TASK",
+      "gh": "REPO FOR A SMALL TEAM",
+      "interpretation": "A focused cognitive module handling one well-defined task \u00e2\u20ac\u201d a single rule set, a single miner configuration, a single agent.",
+      "components": [
+        "miner",
+        "generate"
+      ],
+      "related": [
+        "cog075",
+        "cog077",
+        "cog014"
+      ]
+    },
+    {
+      "id": "cog077",
+      "name": "COGNITIVE PAIR",
+      "gh": "REPO FOR A PAIR",
+      "interpretation": "Two tightly coupled cognitive components that always work together \u00e2\u20ac\u201d unify+ure, atomspace+cogutil, link-grammar+lg-atomese.",
+      "components": [
+        "unify",
+        "ure",
+        "cogutil",
+        "atomspace"
+      ],
+      "related": [
+        "cog075",
+        "cog076",
+        "cog129"
+      ]
+    },
+    {
+      "id": "cog078",
+      "name": "PERSONAL COGNITIVE WORKSPACE",
+      "gh": "PERSONAL REPO",
+      "interpretation": "An individual agent's private working memory \u00e2\u20ac\u201d its own goals, plans, and intermediate computations.",
+      "components": [
+        "agents",
+        "atomspace-agents"
+      ],
+      "related": [
+        "cog059",
+        "cog079",
+        "cog141"
+      ]
+    },
+    {
+      "id": "cog079",
+      "name": "YOUR OWN COGNITIVE FORK",
+      "gh": "YOUR OWN FORK",
+      "interpretation": "A divergent cognitive trajectory \u00e2\u20ac\u201d an agent exploring a hypothesis independently before potentially merging insights back.",
+      "components": [
+        "atomspace",
+        "agents"
+      ],
+      "related": [
+        "cog078",
+        "cog073",
+        "cog154"
+      ]
+    },
+    {
+      "id": "cog080",
+      "name": "SELF-GOVERNING COGNITIVE MODULES",
+      "gh": "SELF-GOVERNING TEAMS",
+      "interpretation": "Each cognitive module manages its own resources, priorities, and strategies \u00e2\u20ac\u201d ECAN self-tunes, URE self-selects rules.",
+      "components": [
+        "attention",
+        "ure"
+      ],
+      "related": [
+        "cog044",
+        "cog012",
+        "cog075"
+      ]
+    },
+    {
+      "id": "cog081",
+      "name": "MICRO-INFERENCE WITHOUT OVERHEAD",
+      "gh": "MICROSERVICES WITHOUT OVERHEAD",
+      "interpretation": "Lightweight inference steps that don't require full URE machinery \u00e2\u20ac\u201d direct truth value computation, simple inheritance lookup.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog020",
+        "cog056",
+        "cog082"
+      ]
+    },
+    {
+      "id": "cog082",
+      "name": "COGNITIVE SERVICE CONNECTIONS",
+      "gh": "SERVICE CONNECTIONS",
+      "interpretation": "Well-defined connection protocols between cognitive services \u00e2\u20ac\u201d how the miner feeds PLN, how PLN feeds the action selector.",
+      "components": [
+        "miner",
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog034",
+        "cog081",
+        "cog108"
+      ]
+    },
+    {
+      "id": "cog083",
+      "name": "EXPERT AND NOVICE KNOWLEDGE",
+      "gh": "SENIOR AND JUNIOR DEVELOPERS",
+      "interpretation": "Knowledge at different maturity levels \u00e2\u20ac\u201d well-established expert rules alongside tentative novice hypotheses, each with appropriate confidence.",
+      "components": [
+        "pln",
+        "atomspace"
+      ],
+      "related": [
+        "cog036",
+        "cog071",
+        "cog040"
+      ]
+    },
+    {
+      "id": "cog084",
+      "name": "EMERGING COGNITIVE CAPABILITIES",
+      "gh": "EMERGING CONTRIBUTORS",
+      "interpretation": "New cognitive capabilities bootstrapping from simple to complex \u00e2\u20ac\u201d emergent behaviors arising from component interactions.",
+      "components": [
+        "agents",
+        "rocca"
+      ],
+      "related": [
+        "cog041",
+        "cog057",
+        "cog068"
+      ]
+    },
+    {
+      "id": "cog085",
+      "name": "LEARNING KNOWLEDGE BASES",
+      "gh": "LEARNING REPOSITORIES",
+      "interpretation": "Knowledge bases specifically designed for learning \u00e2\u20ac\u201d training corpora, example sets, curriculum structures.",
+      "components": [
+        "learn",
+        "asmoses"
+      ],
+      "related": [
+        "cog018",
+        "cog057",
+        "cog086"
+      ]
+    },
+    {
+      "id": "cog086",
+      "name": "STARTER COGNITIVE PATTERNS",
+      "gh": "STARTER PROJECTS",
+      "interpretation": "Pre-built cognitive configurations for common tasks \u00e2\u20ac\u201d a reasoning starter kit, a perception pipeline template, an agent skeleton.",
+      "components": [
+        "agents",
+        "opencog"
+      ],
+      "related": [
+        "cog065",
+        "cog085",
+        "cog057"
+      ]
+    },
+    {
+      "id": "cog087",
+      "name": "INDIVIDUALLY OWNED KNOWLEDGE DOMAINS",
+      "gh": "INDIVIDUALLY OWNED PACKAGES",
+      "interpretation": "Knowledge domains owned by specific subsystems \u00e2\u20ac\u201d linguistic knowledge by NLP, spatial knowledge by spacetime, probabilistic by PLN.",
+      "components": [
+        "lg-atomese",
+        "spacetime",
+        "pln"
+      ],
+      "related": [
+        "cog014",
+        "cog015",
+        "cog046"
+      ]
+    },
+    {
+      "id": "cog088",
+      "name": "COGNITIVE CHAT CHANNELS",
+      "gh": "COMMUNITY CHAT",
+      "interpretation": "Real-time communication channels between cognitive modules \u00e2\u20ac\u201d event buses, notification atoms, status broadcasts.",
+      "components": [
+        "cogserver",
+        "atomspace-cog"
+      ],
+      "related": [
+        "cog034",
+        "cog063",
+        "cog012"
+      ]
+    },
+    {
+      "id": "cog089",
+      "name": "UTILITY COGNITIVE PRIMITIVES",
+      "gh": "UTILITY PACKAGES",
+      "interpretation": "Low-level cognitive utilities \u00e2\u20ac\u201d hash functions, random number generators, logging, configuration \u00e2\u20ac\u201d the cogutil layer.",
+      "components": [
+        "cogutil"
+      ],
+      "related": [
+        "cog048",
+        "cog066",
+        "cog129"
+      ]
+    },
+    {
+      "id": "cog090",
+      "name": "COGNITIVE REST SPACE",
+      "gh": "DEVELOPER LOUNGE",
+      "interpretation": "Quiescent states where the system consolidates, defragments attention, and performs maintenance without external pressure.",
+      "components": [
+        "attention",
+        "cogserver"
+      ],
+      "related": [
+        "cog033",
+        "cog022",
+        "cog026"
+      ]
+    },
+    {
+      "id": "cog091",
+      "name": "COGNITIVE ONBOARDING",
+      "gh": "CONTRIBUTOR ONBOARDING",
+      "interpretation": "The process by which new knowledge is integrated into the existing knowledge base \u00e2\u20ac\u201d grounding, linking, truth value assignment.",
+      "components": [
+        "atomspace",
+        "learn",
+        "sensory"
+      ],
+      "related": [
+        "cog025",
+        "cog026",
+        "cog057"
+      ]
+    },
+    {
+      "id": "cog092",
+      "name": "COGNITIVE WEBHOOK",
+      "gh": "WEBHOOK ENDPOINT",
+      "interpretation": "Event-driven cognitive triggers \u00e2\u20ac\u201d when a particular Atom state is detected, automatically invoke a reasoning or action chain.",
+      "components": [
+        "cogserver",
+        "atomspace"
+      ],
+      "related": [
+        "cog056",
+        "cog074",
+        "cog034"
+      ]
+    },
+    {
+      "id": "cog093",
+      "name": "KNOWLEDGE SNIPPETS",
+      "gh": "CODE SNIPPETS",
+      "interpretation": "Small, reusable knowledge fragments \u00e2\u20ac\u201d individual rules, schema snippets, type definitions that can be composed into larger structures.",
+      "components": [
+        "ure",
+        "atomspace"
+      ],
+      "related": [
+        "cog065",
+        "cog048",
+        "cog089"
+      ]
+    },
+    {
+      "id": "cog094",
+      "name": "DRAFT HYPOTHESES",
+      "gh": "PUBLIC DRAFTS",
+      "interpretation": "Tentative, publicly visible hypotheses \u00e2\u20ac\u201d low-confidence beliefs marked as drafts, available for scrutiny and revision.",
+      "components": [
+        "pln",
+        "atomspace"
+      ],
+      "related": [
+        "cog059",
+        "cog072",
+        "cog083"
+      ]
+    },
+    {
+      "id": "cog095",
+      "name": "KNOWLEDGE BASE COMPLEX",
+      "gh": "REPOSITORY COMPLEX",
+      "interpretation": "A multi-faceted knowledge system combining storage, inference, and attention into an integrated cognitive complex.",
+      "components": [
+        "atomspace",
+        "atomspace-storage",
+        "attention"
+      ],
+      "related": [
+        "cog038",
+        "cog096",
+        "cog099"
+      ]
+    },
+    {
+      "id": "cog096",
+      "name": "NUMBER OF ABSTRACTION LAYERS",
+      "gh": "NUMBER OF LAYERS",
+      "interpretation": "The depth of abstraction in the cognitive architecture - from raw atoms through patterns to meta-cognitive reflections.",
+      "components": [
+        "atomspace",
+        "pln",
+        "attention"
+      ],
+      "related": [
+        "cog021",
+        "cog039",
+        "cog116"
+      ]
+    },
+    {
+      "id": "cog097",
+      "name": "PROTECTED CORE BELIEFS",
+      "gh": "PROTECTED BRANCHES",
+      "interpretation": "Foundational beliefs that require extraordinary evidence to revise - type axioms, logical tautologies, grounded perceptual truths.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog024",
+        "cog047",
+        "cog051"
+      ]
+    },
+    {
+      "id": "cog098",
+      "name": "NAVIGATION OF KNOWLEDGE SPACE",
+      "gh": "NAVIGATION REALMS",
+      "interpretation": "Mechanisms for traversing the vast knowledge graph - attention-guided search, spreading activation, pattern-driven navigation.",
+      "components": [
+        "attention",
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog030",
+        "cog052",
+        "cog131"
+      ]
+    },
+    {
+      "id": "cog099",
+      "name": "MAIN KNOWLEDGE BASE",
+      "gh": "MAIN REPOSITORY",
+      "interpretation": "The primary AtomSpace instance - the authoritative source of beliefs, goals, and plans for the cognitive system.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog038",
+        "cog095",
+        "cog066"
+      ]
+    },
+    {
+      "id": "cog100",
+      "name": "CONTRIBUTOR PATH TO COGNITION",
+      "gh": "CONTRIBUTOR PATH",
+      "interpretation": "The path by which new information becomes integrated knowledge - from sensory input through grounding to committed belief.",
+      "components": [
+        "sensory",
+        "learn",
+        "atomspace"
+      ],
+      "related": [
+        "cog091",
+        "cog112",
+        "cog025"
+      ]
+    },
+    {
+      "id": "cog101",
+      "name": "INFERENCE THOROUGHFARE",
+      "gh": "CODE THOROUGHFARE",
+      "interpretation": "High-traffic inference paths - frequently used reasoning chains that become the highways of cognitive processing.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog005",
+        "cog052",
+        "cog030"
+      ]
+    },
+    {
+      "id": "cog102",
+      "name": "FAMILY OF PERCEPTION ENTRY POINTS",
+      "gh": "FAMILY OF ENTRY POINTS",
+      "interpretation": "Multiple sensory modalities each providing entry into the cognitive system - vision, language, proprioception.",
+      "components": [
+        "sensory",
+        "vision",
+        "link-grammar",
+        "motor"
+      ],
+      "related": [
+        "cog025",
+        "cog053",
+        "cog006"
+      ]
+    },
+    {
+      "id": "cog103",
+      "name": "SMALL WORKING MEMORY AREAS",
+      "gh": "SMALL STAGING AREAS",
+      "interpretation": "Limited working memory buffers - small attention-focused regions where active reasoning occurs.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog059",
+        "cog011",
+        "cog030"
+      ]
+    },
+    {
+      "id": "cog104",
+      "name": "BELIEF REVISION REPAIR",
+      "gh": "TECHNICAL DEBT REPAIR",
+      "interpretation": "Systematic revision of inconsistent, outdated, or weakly-grounded beliefs - cognitive debt that must be serviced.",
+      "components": [
+        "pln",
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog040",
+        "cog047",
+        "cog026"
+      ]
+    },
+    {
+      "id": "cog105",
+      "name": "AGENT-FACING CAPABILITIES",
+      "gh": "USER-FACING FEATURES",
+      "interpretation": "Cognitive capabilities directly serving the agents goals - action selection, plan execution, goal pursuit.",
+      "components": [
+        "agents",
+        "rocca",
+        "motor"
+      ],
+      "related": [
+        "cog042",
+        "cog120",
+        "cog017"
+      ]
+    },
+    {
+      "id": "cog106",
+      "name": "POSITIVE INTERFACE SPACE",
+      "gh": "POSITIVE INTERFACE SPACE",
+      "interpretation": "Well-designed cognitive interfaces that make interaction natural - intuitive query languages, clear Atom type semantics.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog053",
+        "cog060",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog107",
+      "name": "MODULAR COGNITIVE DESIGN",
+      "gh": "MODULAR DESIGN",
+      "interpretation": "The cognitive architecture decomposed into interchangeable modules - swap PLN for another reasoner, swap storage backends.",
+      "components": [
+        "atomspace-storage",
+        "ure",
+        "atomspace-rocks",
+        "atomspace-pgres"
+      ],
+      "related": [
+        "cog014",
+        "cog095",
+        "cog108"
+      ]
+    },
+    {
+      "id": "cog108",
+      "name": "CONNECTED COGNITIVE SERVICES",
+      "gh": "CONNECTED SERVICES",
+      "interpretation": "Cognitive services connected through shared AtomSpace - each reads/writes Atoms, enabling implicit communication.",
+      "components": [
+        "atomspace",
+        "cogserver",
+        "atomspace-cog"
+      ],
+      "related": [
+        "cog082",
+        "cog034",
+        "cog107"
+      ]
+    },
+    {
+      "id": "cog109",
+      "name": "LONG THIN INFERENCE CHAIN",
+      "gh": "LONG THIN MODULE",
+      "interpretation": "Extended but focused inference chains - deep but narrow reasoning about a specific topic.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog005",
+        "cog101",
+        "cog021"
+      ]
+    },
+    {
+      "id": "cog110",
+      "name": "MAIN COGNITIVE ENTRY POINT",
+      "gh": "MAIN ENTRY POINT",
+      "interpretation": "The primary way to interact with the cognitive system - the Scheme/Python AtomSpace interface.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog053",
+        "cog031",
+        "cog106"
+      ]
+    },
+    {
+      "id": "cog111",
+      "name": "INTERNAL COGNITIVE DOCUMENTATION",
+      "gh": "INTERNAL DOCUMENTATION",
+      "interpretation": "Self-documenting knowledge structures - Atoms that describe other Atoms, meta-knowledge about capabilities.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog060",
+        "cog062",
+        "cog134"
+      ]
+    },
+    {
+      "id": "cog112",
+      "name": "COGNITIVE ONBOARDING FLOW",
+      "gh": "ONBOARDING FLOW",
+      "interpretation": "The flow by which new knowledge is grounded, type-checked, linked to existing concepts, and integrated.",
+      "components": [
+        "atomspace",
+        "learn"
+      ],
+      "related": [
+        "cog091",
+        "cog100",
+        "cog025"
+      ]
+    },
+    {
+      "id": "cog113",
+      "name": "EXTERNAL COGNITIVE INTEGRATION",
+      "gh": "EXTERNAL INTEGRATION",
+      "interpretation": "Integration with external cognitive resources - LLMs, knowledge graphs, sensor feeds, robotic controllers.",
+      "components": [
+        "sensory",
+        "atomspace-metta",
+        "atomspace-bridge"
+      ],
+      "related": [
+        "cog006",
+        "cog007",
+        "cog102"
+      ]
+    },
+    {
+      "id": "cog114",
+      "name": "HIERARCHY OF TYPE NAMESPACES",
+      "gh": "HIERARCHY OF NAMESPACES",
+      "interpretation": "Atom types organized hierarchically - Node > ConceptNode > WordNode; Link > EvaluationLink > PredicateLink.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog039",
+        "cog046",
+        "cog016"
+      ]
+    },
+    {
+      "id": "cog115",
+      "name": "ACTIVE COGNITIVE DEBATES",
+      "gh": "ACTIVE DISCUSSIONS",
+      "interpretation": "Competing hypotheses actively being evaluated - multiple inference paths arguing for contradictory conclusions.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog061",
+        "cog050",
+        "cog047"
+      ]
+    },
+    {
+      "id": "cog116",
+      "name": "CASCADE OF COGNITIVE ABSTRACTIONS",
+      "gh": "CASCADE OF ABSTRACTIONS",
+      "interpretation": "Knowledge cascading from concrete to abstract: percepts > features > concepts > categories > theories > meta-theories.",
+      "components": [
+        "atomspace",
+        "pln",
+        "learn"
+      ],
+      "related": [
+        "cog039",
+        "cog096",
+        "cog205"
+      ]
+    },
+    {
+      "id": "cog117",
+      "name": "PROTECTIVE COGNITIVE WRAPPER",
+      "gh": "PROTECTIVE WRAPPER",
+      "interpretation": "Encapsulation layers that protect core knowledge from corruption - validation, type-checking, confidence thresholds.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog097",
+        "cog047",
+        "cog024"
+      ]
+    },
+    {
+      "id": "cog118",
+      "name": "COGNITIVE FEATURE FLAGS",
+      "gh": "FEATURE FLAGS",
+      "interpretation": "Toggleable cognitive capabilities - enable/disable specific inference rules, attention mechanisms at runtime.",
+      "components": [
+        "cogserver",
+        "ure"
+      ],
+      "related": [
+        "cog044",
+        "cog080",
+        "cog073"
+      ]
+    },
+    {
+      "id": "cog119",
+      "name": "SHARED COGNITIVE UTILITIES",
+      "gh": "SHARED UTILITIES",
+      "interpretation": "Cross-cutting cognitive utilities - truth value arithmetic, confidence merging, Atom comparison, graph traversal.",
+      "components": [
+        "cogutil",
+        "atomspace"
+      ],
+      "related": [
+        "cog048",
+        "cog089",
+        "cog129"
+      ]
+    },
+    {
+      "id": "cog120",
+      "name": "COGNITIVE JOURNEYS",
+      "gh": "USER JOURNEYS",
+      "interpretation": "Goal-directed cognitive sequences - from goal inception through planning, execution, monitoring, to completion.",
+      "components": [
+        "agents",
+        "rocca",
+        "ure"
+      ],
+      "related": [
+        "cog105",
+        "cog042",
+        "cog121"
+      ]
+    },
+    {
+      "id": "cog121",
+      "name": "COGNITIVE WORKFLOW SHAPE",
+      "gh": "WORKFLOW SHAPE",
+      "interpretation": "The characteristic shape of cognitive processing - wide perception narrowing through attention to focused reasoning.",
+      "components": [
+        "sensory",
+        "attention",
+        "ure",
+        "motor"
+      ],
+      "related": [
+        "cog042",
+        "cog120",
+        "cog017"
+      ]
+    },
+    {
+      "id": "cog122",
+      "name": "PUBLIC COGNITIVE INTERFACES",
+      "gh": "PUBLIC INTERFACES",
+      "interpretation": "Well-defined public interfaces to cognitive capabilities - query atoms, invoke rules, read attention values.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-websockets"
+      ],
+      "related": [
+        "cog016",
+        "cog053",
+        "cog106"
+      ]
+    },
+    {
+      "id": "cog123",
+      "name": "COGNITIVE DENSITY",
+      "gh": "CONTRIBUTOR DENSITY",
+      "interpretation": "The richness of interconnection in knowledge - highly connected subgraphs indicate well-understood domains.",
+      "components": [
+        "atomspace",
+        "miner"
+      ],
+      "related": [
+        "cog030",
+        "cog037",
+        "cog101"
+      ]
+    },
+    {
+      "id": "cog124",
+      "name": "COGNITIVE FEATURE MODULES",
+      "gh": "FEATURE MODULES",
+      "interpretation": "Self-contained cognitive feature packages - a complete NLP pipeline, a complete reasoning suite.",
+      "components": [
+        "learn",
+        "pln",
+        "lg-atomese"
+      ],
+      "related": [
+        "cog014",
+        "cog107",
+        "cog076"
+      ]
+    },
+    {
+      "id": "cog125",
+      "name": "PROGRESSIVE COGNITIVE DISCLOSURE",
+      "gh": "PROGRESSIVE DISCLOSURE",
+      "interpretation": "Knowledge revealed progressively as attention increases - surface features first, then deeper structure.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog036",
+        "cog116",
+        "cog098"
+      ]
+    },
+    {
+      "id": "cog126",
+      "name": "CORE COGNITIVE LOGIC",
+      "gh": "CORE LOGIC",
+      "interpretation": "The irreducible logical core - modus ponens, unification, pattern matching, truth value combination.",
+      "components": [
+        "unify",
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog066",
+        "cog075",
+        "cog212"
+      ]
+    },
+    {
+      "id": "cog127",
+      "name": "COGNITIVE ACCESS GRADIENT",
+      "gh": "ACCESS GRADIENT",
+      "interpretation": "Smooth gradient from easily accessible surface knowledge to deeply buried implicit knowledge.",
+      "components": [
+        "attention",
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog036",
+        "cog125",
+        "cog098"
+      ]
+    },
+    {
+      "id": "cog128",
+      "name": "COGNITIVE CLARITY",
+      "gh": "CODE CLARITY",
+      "interpretation": "Knowledge represented with maximum clarity - unambiguous Atom types, explicit truth values, well-defined semantics.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog060",
+        "cog111",
+        "cog106"
+      ]
+    },
+    {
+      "id": "cog129",
+      "name": "SHARED KNOWLEDGE AT THE HEART",
+      "gh": "SHARED CODE AT THE HEART",
+      "interpretation": "The AtomSpace at the center, shared by all subsystems - the cognitive commons from which everything reads/writes.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog048",
+        "cog066",
+        "cog067"
+      ]
+    },
+    {
+      "id": "cog130",
+      "name": "COGNITIVE LANDING PAGE",
+      "gh": "LANDING PAGE",
+      "interpretation": "The initial cognitive state presented to a new interaction - context summary, current goals, available capabilities.",
+      "components": [
+        "cogserver",
+        "atomspace-explorer"
+      ],
+      "related": [
+        "cog031",
+        "cog053",
+        "cog060"
+      ]
+    },
+    {
+      "id": "cog131",
+      "name": "THE FLOW THROUGH COGNITIVE MODULES",
+      "gh": "THE FLOW THROUGH MODULES",
+      "interpretation": "How information flows through the cognitive pipeline - perception to attention to reasoning to planning to action.",
+      "components": [
+        "sensory",
+        "attention",
+        "ure",
+        "motor"
+      ],
+      "related": [
+        "cog042",
+        "cog098",
+        "cog121"
+      ]
+    },
+    {
+      "id": "cog132",
+      "name": "SHORT COGNITIVE IMPORTS",
+      "gh": "SHORT IMPORTS",
+      "interpretation": "Minimal cognitive overhead to access knowledge - direct AtomSpace queries without layers of indirection.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog081",
+        "cog119",
+        "cog128"
+      ]
+    },
+    {
+      "id": "cog133",
+      "name": "EXPERIENCE LOG AS STAGE",
+      "gh": "CHANGELOG AS A STAGE",
+      "interpretation": "The experiential log as a staging area - recent experiences queued for consolidation and long-term storage.",
+      "components": [
+        "sensory",
+        "spacetime",
+        "atomspace"
+      ],
+      "related": [
+        "cog026",
+        "cog064",
+        "cog100"
+      ]
+    },
+    {
+      "id": "cog134",
+      "name": "COGNITIVE ARCHITECTURE OVERVIEW",
+      "gh": "ARCHITECTURE OVERVIEW",
+      "interpretation": "A meta-cognitive map of the systems own architecture - self-knowledge about capabilities and structure.",
+      "components": [
+        "atomspace",
+        "opencog"
+      ],
+      "related": [
+        "cog062",
+        "cog111",
+        "cog116"
+      ]
+    },
+    {
+      "id": "cog135",
+      "name": "TAPESTRY OF COGNITIVE FEATURES",
+      "gh": "TAPESTRY OF FEATURES",
+      "interpretation": "The rich interwoven fabric of cognitive capabilities - reasoning, learning, perception, action strengthening each other.",
+      "components": [
+        "opencog"
+      ],
+      "related": [
+        "cog002",
+        "cog042",
+        "cog003"
+      ]
+    },
+    {
+      "id": "cog136",
+      "name": "PAIR REASONING SPACE",
+      "gh": "PAIR PROGRAMMING SPACE",
+      "interpretation": "Collaborative reasoning between two tightly coupled inference engines - PLN and URE working in tandem.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog077",
+        "cog023",
+        "cog063"
+      ]
+    },
+    {
+      "id": "cog137",
+      "name": "BEGINNER COGNITIVE MODULES",
+      "gh": "BEGINNER MODULES",
+      "interpretation": "Simple cognitive modules suitable for learning the architecture - basic pattern matchers, simple truth value updaters.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog057",
+        "cog085",
+        "cog086"
+      ]
+    },
+    {
+      "id": "cog138",
+      "name": "ASYNC COGNITIVE QUEUE",
+      "gh": "ASYNC TO THE QUEUE",
+      "interpretation": "Queuing non-urgent cognitive tasks - background belief revision, deferred learning, scheduled attention redistribution.",
+      "components": [
+        "cogserver",
+        "attention"
+      ],
+      "related": [
+        "cog033",
+        "cog074",
+        "cog150"
+      ]
+    },
+    {
+      "id": "cog139",
+      "name": "COGNITIVE DEVELOPMENT KITCHEN",
+      "gh": "DEVELOPMENT KITCHEN",
+      "interpretation": "The experimental space where new cognitive algorithms are developed and tested before integration.",
+      "components": [
+        "agents",
+        "evidence",
+        "rocca"
+      ],
+      "related": [
+        "cog073",
+        "cog058",
+        "cog068"
+      ]
+    },
+    {
+      "id": "cog140",
+      "name": "PRIVATE COGNITIVE FORK",
+      "gh": "PRIVATE FORK",
+      "interpretation": "A private branch of reasoning - exploring a hypothesis without committing publicly until confidence is sufficient.",
+      "components": [
+        "atomspace",
+        "agents"
+      ],
+      "related": [
+        "cog059",
+        "cog079",
+        "cog072"
+      ]
+    },
+    {
+      "id": "cog141",
+      "name": "A TRAIN OF THOUGHT OF ONES OWN",
+      "gh": "A BRANCH OF ONES OWN",
+      "interpretation": "Each cognitive agent maintains its own train of thought - independent reasoning threads that may converge.",
+      "components": [
+        "atomspace-agents",
+        "agents"
+      ],
+      "related": [
+        "cog078",
+        "cog079",
+        "cog023"
+      ]
+    },
+    {
+      "id": "cog142",
+      "name": "SEQUENCE OF BELIEF REVISION STAGES",
+      "gh": "SEQUENCE OF REVIEW STAGES",
+      "interpretation": "Beliefs pass through revision stages: proposed, evaluated, debated, accepted/rejected.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog047",
+        "cog051",
+        "cog104"
+      ]
+    },
+    {
+      "id": "cog143",
+      "name": "HYPOTHESIS TESTING CLUSTER",
+      "gh": "TEST CLUSTER",
+      "interpretation": "A cluster of related hypotheses tested together - mutually exclusive alternatives evaluated against same evidence.",
+      "components": [
+        "pln",
+        "miner",
+        "ure"
+      ],
+      "related": [
+        "cog072",
+        "cog115",
+        "cog045"
+      ]
+    },
+    {
+      "id": "cog144",
+      "name": "COGNITIVE CLEANUP UTILITIES",
+      "gh": "CLEANUP UTILITIES",
+      "interpretation": "Maintenance processes cleaning the knowledge base - removing contradictions, merging duplicates, decaying unused Atoms.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog074",
+        "cog033",
+        "cog178"
+      ]
+    },
+    {
+      "id": "cog145",
+      "name": "COGNITIVE ARTIFACT STORAGE",
+      "gh": "ARTIFACT STORAGE",
+      "interpretation": "Long-term storage of cognitive artifacts - learned models, proven theorems, successful plans preserved for retrieval.",
+      "components": [
+        "atomspace-rocks",
+        "atomspace-pgres",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog019",
+        "cog070",
+        "cog071"
+      ]
+    },
+    {
+      "id": "cog146",
+      "name": "FLEXIBLE COGNITIVE WORKSPACE",
+      "gh": "FLEXIBLE WORKSPACE",
+      "interpretation": "Adaptable working memory that expands or contracts based on task demands.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog103",
+        "cog022",
+        "cog028"
+      ]
+    },
+    {
+      "id": "cog147",
+      "name": "SHARED COGNITIVE DEPENDENCIES",
+      "gh": "SHARED DEPENDENCIES",
+      "interpretation": "Cognitive components sharing common dependencies - all reasoners need the pattern matcher, all learners need AtomSpace.",
+      "components": [
+        "atomspace",
+        "unify",
+        "cogutil"
+      ],
+      "related": [
+        "cog048",
+        "cog119",
+        "cog077"
+      ]
+    },
+    {
+      "id": "cog148",
+      "name": "SMALL COGNITIVE WORK GROUPS",
+      "gh": "SMALL WORK GROUPS",
+      "interpretation": "Small clusters of Atoms working together on a sub-problem - localized inference within attention-bounded subgraphs.",
+      "components": [
+        "attention",
+        "ure"
+      ],
+      "related": [
+        "cog011",
+        "cog030",
+        "cog076"
+      ]
+    },
+    {
+      "id": "cog149",
+      "name": "COGNITIVE WELCOME",
+      "gh": "README WELCOMES YOU",
+      "interpretation": "The systems self-introduction - what it knows, what it can do, what its currently working on.",
+      "components": [
+        "cogserver",
+        "atomspace-explorer"
+      ],
+      "related": [
+        "cog060",
+        "cog130",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog150",
+      "name": "ATTENTION QUEUE MANAGEMENT",
+      "gh": "QUEUE MANAGEMENT",
+      "interpretation": "Managing the queue of Atoms competing for attention - priority scheduling, fair allocation, starvation prevention.",
+      "components": [
+        "attention"
+      ],
+      "related": [
+        "cog028",
+        "cog138",
+        "cog022"
+      ]
+    },
+    {
+      "id": "cog151",
+      "name": "FOCUSED COGNITIVE DISCUSSIONS",
+      "gh": "FOCUSED DISCUSSIONS",
+      "interpretation": "Tightly scoped reasoning about a specific topic - targeted inference toward a particular conclusion.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog061",
+        "cog011",
+        "cog109"
+      ]
+    },
+    {
+      "id": "cog152",
+      "name": "PRIVATE COGNITIVE MODULE",
+      "gh": "TEAM PRIVATE REPO",
+      "interpretation": "A cognitive module with private internal state - external modules see only published conclusions.",
+      "components": [
+        "atomspace-agents",
+        "agents"
+      ],
+      "related": [
+        "cog059",
+        "cog013",
+        "cog078"
+      ]
+    },
+    {
+      "id": "cog153",
+      "name": "EXTENSIBLE COGNITIVE PLUGINS",
+      "gh": "EXTENSIBLE PLUGINS",
+      "interpretation": "The cognitive architecture as a plugin system - new Atom types, inference rules, attention mechanisms added dynamically.",
+      "components": [
+        "atomspace",
+        "ure",
+        "cogserver"
+      ],
+      "related": [
+        "cog107",
+        "cog118",
+        "cog046"
+      ]
+    },
+    {
+      "id": "cog154",
+      "name": "EXPERIMENTAL REASONING BRANCH",
+      "gh": "EXPERIMENTAL BRANCH",
+      "interpretation": "A speculative line of reasoning - pursuing an unlikely hypothesis to see where it leads.",
+      "components": [
+        "ure",
+        "pln",
+        "agents"
+      ],
+      "related": [
+        "cog079",
+        "cog072",
+        "cog140"
+      ]
+    },
+    {
+      "id": "cog155",
+      "name": "LEGACY KNOWLEDGE SUPPORT",
+      "gh": "LEGACY SUPPORT",
+      "interpretation": "Supporting old knowledge formats, deprecated Atom types, and obsolete inference rules for backward compatibility.",
+      "components": [
+        "atomspace",
+        "opencog"
+      ],
+      "related": [
+        "cog040",
+        "cog070",
+        "cog104"
+      ]
+    },
+    {
+      "id": "cog156",
+      "name": "STABLE KNOWLEDGE BASE",
+      "gh": "STABLE CODEBASE",
+      "interpretation": "A well-tested, consistent knowledge base - no contradictions, all truth values calibrated, all links valid.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog071",
+        "cog097",
+        "cog047"
+      ]
+    },
+    {
+      "id": "cog157",
+      "name": "LOCAL COGNITIVE ENVIRONMENT",
+      "gh": "LOCAL DEV ENVIRONMENT",
+      "interpretation": "A local, self-contained cognitive instance for experimentation - full AtomSpace with subset knowledge.",
+      "components": [
+        "atomspace",
+        "atomspace-rocks"
+      ],
+      "related": [
+        "cog073",
+        "cog072",
+        "cog139"
+      ]
+    },
+    {
+      "id": "cog158",
+      "name": "TRANSPARENT COGNITIVE PROCESSES",
+      "gh": "TRANSPARENT PROCESSES",
+      "interpretation": "Reasoning that can be inspected and explained - every inference step traceable, every belief justifiable.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog060",
+        "cog111",
+        "cog128"
+      ]
+    },
+    {
+      "id": "cog159",
+      "name": "MULTIPLE COGNITIVE PERSPECTIVES",
+      "gh": "MULTIPLE PERSPECTIVES",
+      "interpretation": "The same knowledge viewed from multiple angles - spatial, temporal, causal, probabilistic, linguistic.",
+      "components": [
+        "atomspace",
+        "spacetime",
+        "pln",
+        "matrix"
+      ],
+      "related": [
+        "cog008",
+        "cog035",
+        "cog054"
+      ]
+    },
+    {
+      "id": "cog160",
+      "name": "COGNITIVE API BOUNDARY",
+      "gh": "API BOUNDARY",
+      "interpretation": "Clean separation between cognitive internals and external interfaces.",
+      "components": [
+        "cogserver",
+        "atomspace-restful"
+      ],
+      "related": [
+        "cog013",
+        "cog122",
+        "cog106"
+      ]
+    },
+    {
+      "id": "cog161",
+      "name": "WELL-DOCUMENTED COGNITIVE AREA",
+      "gh": "WELL-DOCUMENTED AREA",
+      "interpretation": "Regions of the knowledge graph with rich meta-annotations explaining why beliefs are held.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog111",
+        "cog060",
+        "cog158"
+      ]
+    },
+    {
+      "id": "cog162",
+      "name": "BACKEND COGNITIVE SERVICES",
+      "gh": "BACKEND SERVICES",
+      "interpretation": "Heavy-lifting cognitive services - large-scale pattern mining, corpus processing, model training.",
+      "components": [
+        "miner",
+        "learn",
+        "asmoses"
+      ],
+      "related": [
+        "cog033",
+        "cog138",
+        "cog004"
+      ]
+    },
+    {
+      "id": "cog163",
+      "name": "EXTERNAL INTEGRATION SPACE",
+      "gh": "EXTERNAL INTEGRATION SPACE",
+      "interpretation": "The interface zone where external systems connect - LLM adapters, robotic middleware, database bridges.",
+      "components": [
+        "atomspace-bridge",
+        "atomspace-metta",
+        "sensory"
+      ],
+      "related": [
+        "cog113",
+        "cog006",
+        "cog102"
+      ]
+    },
+    {
+      "id": "cog164",
+      "name": "PUBLIC COGNITIVE ENDPOINTS",
+      "gh": "PUBLIC ENDPOINTS",
+      "interpretation": "Published cognitive service endpoints - reasoning-as-a-service, knowledge-query-as-a-service.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-websockets"
+      ],
+      "related": [
+        "cog122",
+        "cog053",
+        "cog069"
+      ]
+    },
+    {
+      "id": "cog165",
+      "name": "OPEN KNOWLEDGE API",
+      "gh": "OPEN API",
+      "interpretation": "Open, documented API for accessing and contributing to the shared knowledge base.",
+      "components": [
+        "atomspace-restful",
+        "atomspace-websockets",
+        "atomspace-typescript"
+      ],
+      "related": [
+        "cog164",
+        "cog122",
+        "cog060"
+      ]
+    },
+    {
+      "id": "cog166",
+      "name": "COGNITIVE WRAPPER LAYER",
+      "gh": "WRAPPER LAYER",
+      "interpretation": "Adaptation layers wrapping raw cognitive outputs into consumable formats - Atomese to natural language or JSON.",
+      "components": [
+        "cogserver",
+        "atomspace-restful"
+      ],
+      "related": [
+        "cog117",
+        "cog160",
+        "cog113"
+      ]
+    },
+    {
+      "id": "cog167",
+      "name": "COGNITIVE FEATURE PREVIEW",
+      "gh": "FEATURE PREVIEW",
+      "interpretation": "New cognitive capabilities in preview mode - enabled for testing but not relied upon for critical decisions.",
+      "components": [
+        "agents",
+        "evidence"
+      ],
+      "related": [
+        "cog118",
+        "cog073",
+        "cog154"
+      ]
+    },
+    {
+      "id": "cog168",
+      "name": "CONNECTION TO EXPERIENCE",
+      "gh": "CONNECTION TO DATA",
+      "interpretation": "Direct connection between reasoning and raw experience - grounding abstract concepts in concrete sensory data.",
+      "components": [
+        "sensory",
+        "spacetime",
+        "atomspace"
+      ],
+      "related": [
+        "cog025",
+        "cog064",
+        "cog100"
+      ]
+    },
+    {
+      "id": "cog169",
+      "name": "VERSIONED KNOWLEDGE RELEASES",
+      "gh": "VERSIONED RELEASES",
+      "interpretation": "Snapshots of the knowledge base at points in time - reproducible cognitive states for testing and rollback.",
+      "components": [
+        "atomspace-rocks",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog071",
+        "cog145",
+        "cog026"
+      ]
+    },
+    {
+      "id": "cog170",
+      "name": "REUSABLE COGNITIVE COMPONENTS",
+      "gh": "REUSABLE COMPONENTS",
+      "interpretation": "Cognitive building blocks designed for reuse - generic pattern matchers, parameterized inference rules.",
+      "components": [
+        "unify",
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog107",
+        "cog065",
+        "cog048"
+      ]
+    },
+    {
+      "id": "cog171",
+      "name": "COGNITIVE DEPENDENCY TREES",
+      "gh": "DEPENDENCY TREES",
+      "interpretation": "The dependency structure of knowledge - which beliefs depend on which evidence, which conclusions require which premises.",
+      "components": [
+        "pln",
+        "ure",
+        "atomspace"
+      ],
+      "related": [
+        "cog039",
+        "cog052",
+        "cog005"
+      ]
+    },
+    {
+      "id": "cog172",
+      "name": "ORGANIC COGNITIVE GROWTH",
+      "gh": "ORGANIC GROWTH",
+      "interpretation": "Knowledge growing organically through experience rather than being pre-programmed - emergent structure from interaction.",
+      "components": [
+        "learn",
+        "sensory",
+        "agents"
+      ],
+      "related": [
+        "cog084",
+        "cog026",
+        "cog025"
+      ]
+    },
+    {
+      "id": "cog173",
+      "name": "COGNITIVE SECURITY BOUNDARY",
+      "gh": "SECURITY BOUNDARY",
+      "interpretation": "Boundaries preventing knowledge corruption - input validation, inference auditing, attention manipulation prevention.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog097",
+        "cog047",
+        "cog117"
+      ]
+    },
+    {
+      "id": "cog174",
+      "name": "GUIDED COGNITIVE TUTORIAL",
+      "gh": "GUIDED TUTORIAL",
+      "interpretation": "Structured learning sequences - curriculum design for progressive skill acquisition by the cognitive system.",
+      "components": [
+        "learn",
+        "agents"
+      ],
+      "related": [
+        "cog085",
+        "cog057",
+        "cog086"
+      ]
+    },
+    {
+      "id": "cog175",
+      "name": "COGNITIVE STAGING ENVIRONMENT",
+      "gh": "STAGING ENVIRONMENT",
+      "interpretation": "A staging area for new knowledge before full integration - temporary beliefs held for evaluation.",
+      "components": [
+        "atomspace",
+        "attention"
+      ],
+      "related": [
+        "cog073",
+        "cog103",
+        "cog133"
+      ]
+    },
+    {
+      "id": "cog176",
+      "name": "BELIEF REVIEW STATION",
+      "gh": "CODE REVIEW STATION",
+      "interpretation": "The mechanism for reviewing proposed beliefs - checking consistency, evaluating evidence, comparing with existing knowledge.",
+      "components": [
+        "pln",
+        "ure"
+      ],
+      "related": [
+        "cog142",
+        "cog047",
+        "cog104"
+      ]
+    },
+    {
+      "id": "cog177",
+      "name": "COGNITIVE TEST DATA",
+      "gh": "TEST DATA",
+      "interpretation": "Curated data sets for testing cognitive capabilities - known-answer inference problems, benchmark tasks.",
+      "components": [
+        "learn",
+        "evidence"
+      ],
+      "related": [
+        "cog072",
+        "cog143",
+        "cog085"
+      ]
+    },
+    {
+      "id": "cog178",
+      "name": "COGNITIVE GARBAGE COLLECTION",
+      "gh": "GARBAGE COLLECTION",
+      "interpretation": "Removing irrelevant, decayed, or contradicted knowledge - attention-driven forgetting for manageability.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog144",
+        "cog026",
+        "cog033"
+      ]
+    },
+    {
+      "id": "cog179",
+      "name": "COGNITIVE HELPER FUNCTIONS",
+      "gh": "HELPER FUNCTIONS",
+      "interpretation": "Small cognitive utilities - truth value calculators, confidence mergers, link traversal helpers.",
+      "components": [
+        "cogutil",
+        "atomspace"
+      ],
+      "related": [
+        "cog089",
+        "cog119",
+        "cog048"
+      ]
+    },
+    {
+      "id": "cog180",
+      "name": "COGNITIVE INSPECTION POINT",
+      "gh": "INSPECTION POINT",
+      "interpretation": "Points where cognitive processing can be observed - breakpoints in inference chains, attention monitors.",
+      "components": [
+        "cogserver",
+        "attention"
+      ],
+      "related": [
+        "cog062",
+        "cog158",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog181",
+      "name": "THE INFERENCE PROCESS",
+      "gh": "THE BUILD PROCESS",
+      "interpretation": "The structured process by which conclusions are built - rule selection, unification, truth value computation, commitment.",
+      "components": [
+        "ure",
+        "unify",
+        "pln"
+      ],
+      "related": [
+        "cog042",
+        "cog051",
+        "cog126"
+      ]
+    },
+    {
+      "id": "cog182",
+      "name": "COGNITIVE ATMOSPHERE",
+      "gh": "DEVELOPMENT ATMOSPHERE",
+      "interpretation": "The ambient cognitive state - overall attention levels, default reasoning strategies, background processing load.",
+      "components": [
+        "attention",
+        "cogserver"
+      ],
+      "related": [
+        "cog090",
+        "cog022",
+        "cog033"
+      ]
+    },
+    {
+      "id": "cog183",
+      "name": "ISOLATED COGNITIVE CONTEXT",
+      "gh": "ISOLATED CONTEXT",
+      "interpretation": "Reasoning within an isolated context - hypothetical worlds, counterfactual scenarios, sandboxed inference.",
+      "components": [
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog073",
+        "cog140",
+        "cog059"
+      ]
+    },
+    {
+      "id": "cog184",
+      "name": "COGNITIVE CONFIGURATION",
+      "gh": "BUILD CONFIGURATION",
+      "interpretation": "Configuration of cognitive parameters - attention decay rates, inference depth limits, confidence thresholds.",
+      "components": [
+        "cogutil",
+        "attention",
+        "ure"
+      ],
+      "related": [
+        "cog044",
+        "cog118",
+        "cog080"
+      ]
+    },
+    {
+      "id": "cog185",
+      "name": "COGNITIVE SYNCHRONIZATION",
+      "gh": "STANDUP MEETING",
+      "interpretation": "Periodic synchronization between cognitive subsystems - aligning goals, sharing discoveries, coordinating attention.",
+      "components": [
+        "attention",
+        "cogserver"
+      ],
+      "related": [
+        "cog034",
+        "cog063",
+        "cog012"
+      ]
+    },
+    {
+      "id": "cog186",
+      "name": "SHARED COGNITIVE STATE",
+      "gh": "SHARED STATE",
+      "interpretation": "State shared across cognitive modules via the AtomSpace - the global blackboard where all subsystems read and write.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog129",
+        "cog067",
+        "cog038"
+      ]
+    },
+    {
+      "id": "cog187",
+      "name": "CORE COGNITIVE INTEGRATION",
+      "gh": "CORE INTEGRATION",
+      "interpretation": "The integration point where all cognitive subsystems converge - the AtomSpace as universal meeting ground.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog129",
+        "cog095",
+        "cog108"
+      ]
+    },
+    {
+      "id": "cog188",
+      "name": "PRIVATE COGNITIVE SCOPE",
+      "gh": "PRIVATE SCOPE",
+      "interpretation": "Module-private knowledge not visible to other subsystems - internal heuristics, working hypotheses.",
+      "components": [
+        "atomspace-agents"
+      ],
+      "related": [
+        "cog059",
+        "cog152",
+        "cog013"
+      ]
+    },
+    {
+      "id": "cog189",
+      "name": "COGNITIVE PREPROCESSING",
+      "gh": "PREPROCESSING",
+      "interpretation": "Initial processing of raw input - tokenization, feature extraction, normalization, grounding.",
+      "components": [
+        "sensory",
+        "link-grammar",
+        "vision"
+      ],
+      "related": [
+        "cog100",
+        "cog102",
+        "cog064"
+      ]
+    },
+    {
+      "id": "cog190",
+      "name": "ABSTRACTION LEVEL VARIETY",
+      "gh": "ABSTRACTION LEVEL VARIETY",
+      "interpretation": "Knowledge at multiple abstraction levels coexisting - raw percepts alongside high-level theories.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog116",
+        "cog096",
+        "cog039"
+      ]
+    },
+    {
+      "id": "cog191",
+      "name": "THE SHAPE OF KNOWLEDGE SPACE",
+      "gh": "THE SHAPE OF CODE SPACE",
+      "interpretation": "The topological structure of the knowledge graph - clusters, bridges, peripheries, cores.",
+      "components": [
+        "atomspace",
+        "miner",
+        "matrix"
+      ],
+      "related": [
+        "cog037",
+        "cog123",
+        "cog030"
+      ]
+    },
+    {
+      "id": "cog192",
+      "name": "COGNITIVE MONITORING DASHBOARDS",
+      "gh": "MONITORING DASHBOARDS",
+      "interpretation": "Real-time displays of cognitive system health - inference throughput, attention distribution, memory pressure.",
+      "components": [
+        "cogserver",
+        "atomspace-explorer"
+      ],
+      "related": [
+        "cog062",
+        "cog180",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog193",
+      "name": "SEMI-PUBLIC COGNITIVE API",
+      "gh": "SEMI-PUBLIC API",
+      "interpretation": "Cognitive interfaces available to trusted modules but not externally - internal service APIs.",
+      "components": [
+        "cogserver",
+        "atomspace"
+      ],
+      "related": [
+        "cog160",
+        "cog122",
+        "cog152"
+      ]
+    },
+    {
+      "id": "cog194",
+      "name": "INTERNAL COGNITIVE INTERFACES",
+      "gh": "INTERNAL INTERFACES",
+      "interpretation": "Internal interfaces between cognitive subsystems - how pattern matcher talks to URE, how ECAN talks to AtomSpace.",
+      "components": [
+        "atomspace",
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog082",
+        "cog108",
+        "cog034"
+      ]
+    },
+    {
+      "id": "cog195",
+      "name": "INFERENCE DEPTH",
+      "gh": "CALL STACK DEPTH",
+      "interpretation": "The depth of nested inference - how many reasoning steps deep before stopping and returning partial results.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog021",
+        "cog109",
+        "cog096"
+      ]
+    },
+    {
+      "id": "cog196",
+      "name": "COGNITIVE ESCAPE HATCHES",
+      "gh": "ESCAPE HATCHES",
+      "interpretation": "Emergency mechanisms for escaping infinite inference loops, attention traps, or deadlocked reasoning.",
+      "components": [
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog021",
+        "cog144",
+        "cog118"
+      ]
+    },
+    {
+      "id": "cog197",
+      "name": "ROBUST COGNITIVE BOUNDARIES",
+      "gh": "ROBUST BOUNDARIES",
+      "interpretation": "Strong boundaries preventing cognitive contamination - one modules errors dont propagate unchecked.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog013",
+        "cog097",
+        "cog173"
+      ]
+    },
+    {
+      "id": "cog198",
+      "name": "COGNITIVE ADAPTERS",
+      "gh": "ADAPTERS BETWEEN MODULES",
+      "interpretation": "Adapter layers translating between different cognitive representations - Atomese to vectors, logic to probability.",
+      "components": [
+        "matrix",
+        "atomspace-metta",
+        "atomspace-bridge"
+      ],
+      "related": [
+        "cog008",
+        "cog054",
+        "cog166"
+      ]
+    },
+    {
+      "id": "cog199",
+      "name": "COGNITIVE METRICS DASHBOARD",
+      "gh": "METRICS DASHBOARD",
+      "interpretation": "Quantitative cognitive metrics - inference accuracy, attention efficiency, learning rate, knowledge growth.",
+      "components": [
+        "cogserver",
+        "attention"
+      ],
+      "related": [
+        "cog062",
+        "cog192",
+        "cog180"
+      ]
+    },
+    {
+      "id": "cog200",
+      "name": "EXPOSED COGNITIVE CONFIGURATION",
+      "gh": "EXPOSED CONFIGURATION",
+      "interpretation": "Cognitive parameters tunable externally - inference depth, attention decay, confidence thresholds.",
+      "components": [
+        "cogutil",
+        "cogserver"
+      ],
+      "related": [
+        "cog184",
+        "cog118",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog201",
+      "name": "COGNITIVE MIDDLEWARE",
+      "gh": "MIDDLEWARE",
+      "interpretation": "Processing layers between raw input and cognitive engagement - filtering, routing, prioritizing.",
+      "components": [
+        "cogserver",
+        "sensory"
+      ],
+      "related": [
+        "cog189",
+        "cog028",
+        "cog166"
+      ]
+    },
+    {
+      "id": "cog202",
+      "name": "BUILT-IN COGNITIVE UTILITIES",
+      "gh": "BUILT-IN UTILITIES",
+      "interpretation": "Core utilities built into the AtomSpace - type checking, truth value operations, basic pattern matching.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog089",
+        "cog119",
+        "cog179"
+      ]
+    },
+    {
+      "id": "cog203",
+      "name": "NESTED COGNITIVE SCOPES",
+      "gh": "NESTED SCOPES",
+      "interpretation": "Hierarchically nested reasoning contexts - global beliefs containing domain beliefs containing task hypotheses.",
+      "components": [
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog183",
+        "cog039",
+        "cog114"
+      ]
+    },
+    {
+      "id": "cog204",
+      "name": "HIDDEN COGNITIVE FEATURES",
+      "gh": "HIDDEN FEATURES",
+      "interpretation": "Latent cognitive capabilities not yet activated - dormant inference rules, unused Atom types.",
+      "components": [
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog118",
+        "cog167",
+        "cog084"
+      ]
+    },
+    {
+      "id": "cog205",
+      "name": "STRUCTURE FOLLOWS COGNITIVE SPACES",
+      "gh": "STRUCTURE FOLLOWS TEAM SPACES",
+      "interpretation": "The code architecture mirrors the cognitive architecture - each component directory maps to a cognitive subsystem.",
+      "components": [
+        "opencog",
+        "atomspace"
+      ],
+      "related": [
+        "cog107",
+        "cog212",
+        "cog219"
+      ]
+    },
+    {
+      "id": "cog206",
+      "name": "EFFICIENT KNOWLEDGE BASE",
+      "gh": "EFFICIENT CODEBASE",
+      "interpretation": "A knowledge base optimized for the operations most frequently performed - fast pattern matching, efficient attention lookup.",
+      "components": [
+        "atomspace",
+        "atomspace-rocks"
+      ],
+      "related": [
+        "cog205",
+        "cog207",
+        "cog132"
+      ]
+    },
+    {
+      "id": "cog207",
+      "name": "GOOD COGNITIVE DEPENDENCIES",
+      "gh": "GOOD DEPENDENCIES",
+      "interpretation": "Clean dependency relationships between cognitive modules - no circular imports, clear layering, validated DAG.",
+      "components": [
+        "atomspace",
+        "cogutil"
+      ],
+      "related": [
+        "cog039",
+        "cog205",
+        "cog147"
+      ]
+    },
+    {
+      "id": "cog208",
+      "name": "GRADUAL COGNITIVE FORMALIZATION",
+      "gh": "GRADUAL FORMALIZATION",
+      "interpretation": "Knowledge starts informal (natural language, fuzzy concepts) and gradually formalizes into precise Atomese as understanding deepens.",
+      "components": [
+        "learn",
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog116",
+        "cog172",
+        "cog100"
+      ]
+    },
+    {
+      "id": "cog209",
+      "name": "KNOWLEDGE BASE LAYOUT",
+      "gh": "README LAYOUT",
+      "interpretation": "The structural layout of the knowledge base - how Atoms are organized, indexed, and made navigable.",
+      "components": [
+        "atomspace",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog114",
+        "cog210",
+        "cog191"
+      ]
+    },
+    {
+      "id": "cog210",
+      "name": "ATOM TYPE STRUCTURE",
+      "gh": "PACKAGE STRUCTURE",
+      "interpretation": "The organization of Atom types into coherent packages - Node types, Link types, Value types, each with clear semantics.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog114",
+        "cog046",
+        "cog209"
+      ]
+    },
+    {
+      "id": "cog211",
+      "name": "HARDENING THE COGNITIVE API",
+      "gh": "HARDENING THE API",
+      "interpretation": "Making cognitive interfaces robust - input validation, error handling, graceful degradation under load.",
+      "components": [
+        "cogserver",
+        "atomspace-restful"
+      ],
+      "related": [
+        "cog160",
+        "cog173",
+        "cog197"
+      ]
+    },
+    {
+      "id": "cog212",
+      "name": "CORE COGNITIVE MODULES",
+      "gh": "CORE MODULES",
+      "interpretation": "The irreducible core modules: atomspace (storage), cogutil (utilities), unify (matching), ure (inference).",
+      "components": [
+        "atomspace",
+        "cogutil",
+        "unify",
+        "ure"
+      ],
+      "related": [
+        "cog066",
+        "cog075",
+        "cog126"
+      ]
+    },
+    {
+      "id": "cog213",
+      "name": "FINAL MODULE DISTRIBUTION",
+      "gh": "FINAL MODULE DISTRIBUTION",
+      "interpretation": "The settled distribution of cognitive responsibilities across modules after architecture has matured.",
+      "components": [
+        "opencog"
+      ],
+      "related": [
+        "cog002",
+        "cog205",
+        "cog107"
+      ]
+    },
+    {
+      "id": "cog214",
+      "name": "BASE ATOM CLASSES",
+      "gh": "BASE CLASSES",
+      "interpretation": "The foundational Atom class hierarchy - Atom > Node/Link > specific types - from which all knowledge structures derive.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog114",
+        "cog215",
+        "cog233"
+      ]
+    },
+    {
+      "id": "cog215",
+      "name": "FOUNDATION COGNITIVE LAYER",
+      "gh": "FOUNDATION LAYER",
+      "interpretation": "The foundational layer (Tier 0) - cogutil and atomspace - upon which everything else is built.",
+      "components": [
+        "cogutil",
+        "atomspace"
+      ],
+      "related": [
+        "cog212",
+        "cog066",
+        "cog024"
+      ]
+    },
+    {
+      "id": "cog216",
+      "name": "CONTAINER ATOMS",
+      "gh": "CONTAINER COMPONENTS",
+      "interpretation": "Atoms that contain other Atoms - SetLink, ListLink, AndLink - providing structure and grouping.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog214",
+        "cog203",
+        "cog210"
+      ]
+    },
+    {
+      "id": "cog217",
+      "name": "BOUNDARY VALIDATORS",
+      "gh": "BOUNDARY VALIDATORS",
+      "interpretation": "Validation at cognitive boundaries - type checking Atoms before insertion, confidence checking before commitment.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog117",
+        "cog173",
+        "cog211"
+      ]
+    },
+    {
+      "id": "cog218",
+      "name": "INTERFACE CONTRACTS",
+      "gh": "INTERFACE CONTRACTS",
+      "interpretation": "Formal contracts between cognitive modules - expected Atom types, required truth value ranges, guaranteed response times.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog082",
+        "cog194",
+        "cog122"
+      ]
+    },
+    {
+      "id": "cog219",
+      "name": "COGNITIVE ABSTRACTION LAYERS",
+      "gh": "ABSTRACTION LAYERS",
+      "interpretation": "The layered abstraction of the cognitive architecture - atoms > patterns > rules > strategies > meta-strategies.",
+      "components": [
+        "atomspace",
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog096",
+        "cog116",
+        "cog039"
+      ]
+    },
+    {
+      "id": "cog220",
+      "name": "TOP-LEVEL COGNITIVE EXPORTS",
+      "gh": "TOP-LEVEL EXPORTS",
+      "interpretation": "The top-level capabilities exported by the cognitive system - what external systems can invoke and rely upon.",
+      "components": [
+        "cogserver",
+        "atomspace-restful"
+      ],
+      "related": [
+        "cog122",
+        "cog164",
+        "cog053"
+      ]
+    },
+    {
+      "id": "cog221",
+      "name": "NATURAL COGNITIVE ENTRY POINTS",
+      "gh": "NATURAL ENTRY POINTS",
+      "interpretation": "Intuitive ways to interact with the system - natural language input, visual queries, gestural commands.",
+      "components": [
+        "sensory",
+        "link-grammar",
+        "cogserver"
+      ],
+      "related": [
+        "cog053",
+        "cog102",
+        "cog110"
+      ]
+    },
+    {
+      "id": "cog222",
+      "name": "LOW BARRIER TO COGNITION",
+      "gh": "LOW BARRIER TO ENTRY",
+      "interpretation": "Making cognitive capabilities accessible without deep expertise - simple APIs, clear defaults, helpful error messages.",
+      "components": [
+        "cogserver",
+        "atomspace-typescript"
+      ],
+      "related": [
+        "cog057",
+        "cog060",
+        "cog137"
+      ]
+    },
+    {
+      "id": "cog223",
+      "name": "DETAILED COGNITIVE DOCUMENTATION",
+      "gh": "DETAILED DOCUMENTATION",
+      "interpretation": "Thorough documentation of cognitive mechanisms - how inference works, how attention flows, how learning occurs.",
+      "components": [
+        "opencog"
+      ],
+      "related": [
+        "cog111",
+        "cog060",
+        "cog161"
+      ]
+    },
+    {
+      "id": "cog224",
+      "name": "MINIMAL COGNITIVE INTERFACE",
+      "gh": "MINIMAL INTERFACE",
+      "interpretation": "The smallest possible interface to a cognitive capability - do one thing well, expose minimum necessary state.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog132",
+        "cog076",
+        "cog081"
+      ]
+    },
+    {
+      "id": "cog225",
+      "name": "COGNITIVE CONTRACTS",
+      "gh": "INTERFACES AS CONTRACTS",
+      "interpretation": "Module interfaces as formal contracts - if you provide Atoms of type X, I guarantee conclusions of type Y with confidence Z.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog218",
+        "cog122",
+        "cog082"
+      ]
+    },
+    {
+      "id": "cog226",
+      "name": "SINGLETON COGNITIVE PATTERNS",
+      "gh": "SINGLETON PATTERN",
+      "interpretation": "One-of-a-kind cognitive structures - the single attention focus, the single goal stack, the single active context.",
+      "components": [
+        "attention",
+        "agents"
+      ],
+      "related": [
+        "cog028",
+        "cog099",
+        "cog150"
+      ]
+    },
+    {
+      "id": "cog227",
+      "name": "MODULE COGNITIVE DEPENDENCIES",
+      "gh": "MODULE DEPENDENCIES",
+      "interpretation": "The explicit dependency graph between cognitive modules - atomspace depends on cogutil, ure depends on unify.",
+      "components": [
+        "cogutil",
+        "atomspace",
+        "unify",
+        "ure"
+      ],
+      "related": [
+        "cog039",
+        "cog207",
+        "cog147"
+      ]
+    },
+    {
+      "id": "cog228",
+      "name": "RECURSIVE COGNITIVE CALLS",
+      "gh": "RECURSIVE CALLS",
+      "interpretation": "Self-referential cognitive operations - meta-reasoning about reasoning, learning to learn, attention to attention.",
+      "components": [
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog022",
+        "cog134",
+        "cog195"
+      ]
+    },
+    {
+      "id": "cog229",
+      "name": "COGNITIVE LOGGING",
+      "gh": "LOGGING INFRASTRUCTURE",
+      "interpretation": "Comprehensive logging of cognitive events - inference steps taken, attention shifts, beliefs modified, goals pursued.",
+      "components": [
+        "cogutil",
+        "cogserver"
+      ],
+      "related": [
+        "cog158",
+        "cog180",
+        "cog133"
+      ]
+    },
+    {
+      "id": "cog230",
+      "name": "COGNITIVE EVENT PROPAGATION",
+      "gh": "EVENT PROPAGATION",
+      "interpretation": "How cognitive events propagate through the system - attention changes rippling through connected Atoms.",
+      "components": [
+        "attention",
+        "atomspace"
+      ],
+      "related": [
+        "cog034",
+        "cog088",
+        "cog030"
+      ]
+    },
+    {
+      "id": "cog231",
+      "name": "COGNITIVE DEBUG ENDPOINTS",
+      "gh": "DEBUG ENDPOINTS",
+      "interpretation": "Interfaces for debugging cognitive processing - step-through inference, attention inspection, belief querying.",
+      "components": [
+        "cogserver"
+      ],
+      "related": [
+        "cog180",
+        "cog158",
+        "cog031"
+      ]
+    },
+    {
+      "id": "cog232",
+      "name": "KNOWLEDGE VERSION TAGS",
+      "gh": "VERSION TAGS",
+      "interpretation": "Tags marking significant states of the knowledge base - before/after learning, pre/post revision, checkpoint states.",
+      "components": [
+        "atomspace-rocks",
+        "atomspace-storage"
+      ],
+      "related": [
+        "cog169",
+        "cog145",
+        "cog071"
+      ]
+    },
+    {
+      "id": "cog233",
+      "name": "BASE COGNITIVE TYPES",
+      "gh": "BASE TYPES",
+      "interpretation": "The primitive types from which all cognitive structures are built - Node, Link, TruthValue, AttentionValue.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog214",
+        "cog210",
+        "cog046"
+      ]
+    },
+    {
+      "id": "cog234",
+      "name": "PUBLIC COGNITIVE API",
+      "gh": "PUBLIC API",
+      "interpretation": "The stable, versioned public API for external cognitive system interaction.",
+      "components": [
+        "cogserver",
+        "atomspace-restful",
+        "atomspace-websockets"
+      ],
+      "related": [
+        "cog122",
+        "cog164",
+        "cog165"
+      ]
+    },
+    {
+      "id": "cog235",
+      "name": "INTERNAL COGNITIVE API",
+      "gh": "INTERNAL API",
+      "interpretation": "Internal APIs between cognitive subsystems - not guaranteed stable, optimized for performance over usability.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog193",
+        "cog194",
+        "cog160"
+      ]
+    },
+    {
+      "id": "cog236",
+      "name": "EXTENSIBLE COGNITIVE INTERFACES",
+      "gh": "EXTENSIBLE INTERFACES",
+      "interpretation": "Interfaces designed for extension - new Atom types can be added, new inference rules registered, new attention policies plugged in.",
+      "components": [
+        "atomspace",
+        "ure"
+      ],
+      "related": [
+        "cog153",
+        "cog046",
+        "cog170"
+      ]
+    },
+    {
+      "id": "cog237",
+      "name": "TYPED COGNITIVE INTERFACES",
+      "gh": "TYPED INTERFACES",
+      "interpretation": "Strongly typed cognitive interfaces - Atom type system enforces correct usage, prevents meaningless combinations.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog114",
+        "cog217",
+        "cog218"
+      ]
+    },
+    {
+      "id": "cog238",
+      "name": "SANITIZED COGNITIVE INPUT",
+      "gh": "SANITIZED INPUT",
+      "interpretation": "Input validation for cognitive processing - malformed Atoms rejected, out-of-range truth values clamped, circular links detected.",
+      "components": [
+        "atomspace",
+        "cogserver"
+      ],
+      "related": [
+        "cog117",
+        "cog173",
+        "cog217"
+      ]
+    },
+    {
+      "id": "cog239",
+      "name": "SMALL COGNITIVE FUNCTIONS",
+      "gh": "SMALL FUNCTIONS",
+      "interpretation": "Small, composable cognitive primitives - individual inference steps, atomic attention updates, single pattern matches.",
+      "components": [
+        "ure",
+        "attention",
+        "unify"
+      ],
+      "related": [
+        "cog081",
+        "cog093",
+        "cog224"
+      ]
+    },
+    {
+      "id": "cog240",
+      "name": "CONSISTENT COGNITIVE FORMATTING",
+      "gh": "CONSISTENT FORMATTING",
+      "interpretation": "Consistent representation of knowledge - uniform Atom naming, standardized truth value scales, regular link structures.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog128",
+        "cog210",
+        "cog237"
+      ]
+    },
+    {
+      "id": "cog241",
+      "name": "COGNITIVE BREAKPOINTS",
+      "gh": "BREAKPOINTS",
+      "interpretation": "Points where cognitive processing can be paused for inspection - inference step boundaries, attention cycle ends.",
+      "components": [
+        "cogserver",
+        "ure"
+      ],
+      "related": [
+        "cog180",
+        "cog231",
+        "cog158"
+      ]
+    },
+    {
+      "id": "cog242",
+      "name": "COGNITIVE WELCOME MESSAGE",
+      "gh": "WELCOME MESSAGE",
+      "interpretation": "The initial greeting when interacting with the cognitive system - current state summary, available commands, active goals.",
+      "components": [
+        "cogserver"
+      ],
+      "related": [
+        "cog149",
+        "cog130",
+        "cog060"
+      ]
+    },
+    {
+      "id": "cog243",
+      "name": "COGNITIVE GUARD CLAUSES",
+      "gh": "GUARD CLAUSES",
+      "interpretation": "Early termination conditions in cognitive processing - if preconditions not met, abort inference immediately.",
+      "components": [
+        "ure",
+        "pln"
+      ],
+      "related": [
+        "cog196",
+        "cog117",
+        "cog021"
+      ]
+    },
+    {
+      "id": "cog244",
+      "name": "TEMPORARY COGNITIVE SOLUTIONS",
+      "gh": "TEMPORARY SOLUTIONS",
+      "interpretation": "Provisional knowledge marked as temporary - placeholders until better information arrives, heuristics pending formal proof.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog094",
+        "cog083",
+        "cog175"
+      ]
+    },
+    {
+      "id": "cog245",
+      "name": "HIGHLIGHTED COGNITIVE FEATURES",
+      "gh": "HIGHLIGHTED FEATURES",
+      "interpretation": "Attention-highlighted knowledge structures - Atoms with high STI that are currently salient and actively being processed.",
+      "components": [
+        "attention"
+      ],
+      "related": [
+        "cog055",
+        "cog030",
+        "cog028"
+      ]
+    },
+    {
+      "id": "cog246",
+      "name": "PROGRESSIVE COGNITIVE ENHANCEMENT",
+      "gh": "PROGRESSIVE ENHANCEMENT",
+      "interpretation": "Cognitive capabilities that degrade gracefully - if full inference is too slow, fall back to cached results or heuristics.",
+      "components": [
+        "ure",
+        "attention"
+      ],
+      "related": [
+        "cog056",
+        "cog247",
+        "cog196"
+      ]
+    },
+    {
+      "id": "cog247",
+      "name": "GRACEFUL COGNITIVE DEGRADATION",
+      "gh": "GRACEFUL DEGRADATION",
+      "interpretation": "The system remains functional under resource pressure - reduced inference depth, narrower attention, approximate reasoning.",
+      "components": [
+        "attention",
+        "ure"
+      ],
+      "related": [
+        "cog246",
+        "cog196",
+        "cog022"
+      ]
+    },
+    {
+      "id": "cog248",
+      "name": "FLEXIBLE COGNITIVE TYPES",
+      "gh": "FLEXIBLE TYPES",
+      "interpretation": "Type system flexibility - Atoms can participate in multiple type hierarchies, types can be refined incrementally.",
+      "components": [
+        "atomspace"
+      ],
+      "related": [
+        "cog114",
+        "cog210",
+        "cog236"
+      ]
+    },
+    {
+      "id": "cog249",
+      "name": "COGNITIVE DOCUMENTATION",
+      "gh": "DOCUMENTATION",
+      "interpretation": "Self-documentation of the cognitive system - every module describes its purpose, capabilities, and interfaces.",
+      "components": [
+        "opencog",
+        "atomspace"
+      ],
+      "related": [
+        "cog111",
+        "cog223",
+        "cog134"
+      ]
+    },
+    {
+      "id": "cog250",
+      "name": "COGNITIVE IDENTITY",
+      "gh": "BRANDING",
+      "interpretation": "The cognitive systems sense of self - its own identity, capabilities, limitations, and purpose as represented in its knowledge.",
+      "components": [
+        "atomspace",
+        "agents"
+      ],
+      "related": [
+        "cog134",
+        "cog078",
+        "cog069"
+      ]
+    },
+    {
+      "id": "cog251",
+      "name": "DIVERSE COGNITIVE TOOLS",
+      "gh": "DIFFERENT TOOLS",
+      "interpretation": "The variety of cognitive tools available - different reasoners, different learners, different matchers for different tasks.",
+      "components": [
+        "ure",
+        "pln",
+        "miner",
+        "asmoses"
+      ],
+      "related": [
+        "cog008",
+        "cog035",
+        "cog107"
+      ]
+    },
+    {
+      "id": "cog252",
+      "name": "COGNITIVE ANNOTATIONS",
+      "gh": "CODE COMMENTS",
+      "interpretation": "Annotations on knowledge structures - why a belief is held, when it was acquired, what evidence supports it, how confident we are.",
+      "components": [
+        "atomspace",
+        "pln"
+      ],
+      "related": [
+        "cog111",
+        "cog161",
+        "cog158"
+      ]
+    },
+    {
+      "id": "cog253",
+      "name": "PERSONAL COGNITIVE TOUCHES",
+      "gh": "PERSONAL TOUCHES",
+      "interpretation": "Individual personality in the cognitive system - unique reasoning styles, preferred heuristics, characteristic attention patterns that make each instance distinct.",
+      "components": [
+        "attention",
+        "agents",
+        "atomspace"
+      ],
+      "related": [
+        "cog078",
+        "cog250",
+        "cog080"
+      ]
+    }
+  ]
+}

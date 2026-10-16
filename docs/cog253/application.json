@@ -1,0 +1,462 @@
+{
+  "version": "1.0.0",
+  "source": {
+    "archive": "cog253-goals.zip",
+    "archive_sha256": "6e7cb16570a97bb40ba432cffbebbbd88f731e1f992b1d994b03143987a360c3",
+    "member": ".goals/oc-cog253-pattern-language/patterns/cog253-complete.json",
+    "catalog_sha256": "6b63eac75e966cc36715860cc339b53d9775ceede42e7ea98860fc10e1a4959f"
+  },
+  "statuses": {
+    "applied": "Changed in this application of COG253; evidence names implementation or documentation.",
+    "existing": "A bounded application already present in this repository, not the entire OpenCog capability.",
+    "design": "SkinTwin architecture guidance; requires implementation and verification before use.",
+    "deferred": "Not currently justified by executable workbench functionality."
+  },
+  "groups": [
+    {
+      "id": "ecosystem",
+      "name": "Ecosystem boundaries",
+      "status": "design",
+      "patterns": [
+        "cog001",
+        "cog002",
+        "cog003",
+        "cog006",
+        "cog007",
+        "cog009",
+        "cog012",
+        "cog013",
+        "cog014",
+        "cog015",
+        "cog020",
+        "cog029",
+        "cog037",
+        "cog041",
+        "cog044",
+        "cog075",
+        "cog076",
+        "cog077",
+        "cog080",
+        "cog082",
+        "cog087",
+        "cog095",
+        "cog107",
+        "cog108",
+        "cog124",
+        "cog148",
+        "cog162",
+        "cog163",
+        "cog171",
+        "cog172",
+        "cog187",
+        "cog205",
+        "cog207",
+        "cog212",
+        "cog213",
+        "cog215",
+        "cog227"
+      ],
+      "evidence": [
+        "docs/research/integration_analysis.md",
+        "docs/Alchemist-Engine.md"
+      ],
+      "decision": "Keep Perfect Corp diagnostics, MioSalon business context, Welns.io/GoBeauty marketplaces, and ViaGlamour manufacturing behind separate adapters. The workbench coordinates their data; providers retain their own responsibilities."
+    },
+    {
+      "id": "representations",
+      "name": "Shared skincare vocabulary",
+      "status": "design",
+      "patterns": [
+        "cog008",
+        "cog010",
+        "cog016",
+        "cog024",
+        "cog027",
+        "cog035",
+        "cog038",
+        "cog039",
+        "cog046",
+        "cog048",
+        "cog054",
+        "cog066",
+        "cog071",
+        "cog093",
+        "cog097",
+        "cog099",
+        "cog114",
+        "cog116",
+        "cog119",
+        "cog126",
+        "cog129",
+        "cog147",
+        "cog156",
+        "cog170",
+        "cog179",
+        "cog186",
+        "cog190",
+        "cog191",
+        "cog202",
+        "cog209",
+        "cog210",
+        "cog214",
+        "cog216",
+        "cog233"
+      ],
+      "evidence": [
+        "docs/Alchemist-Engine.md",
+        "chain_stage.py"
+      ],
+      "decision": "Use concern, outcome_id, fulfillment_id, and the bounded integer score as the current shared vocabulary. Future diagnostic tensors, ingredient specifications, elixir versions, and treatment plans need explicit schemas and provider provenance before joining that vocabulary; an AtomSpace backend remains optional."
+    },
+    {
+      "id": "reasoning",
+      "name": "Elixir execution and review",
+      "status": "design",
+      "patterns": [
+        "cog004",
+        "cog005",
+        "cog011",
+        "cog018",
+        "cog021",
+        "cog023",
+        "cog042",
+        "cog049",
+        "cog050",
+        "cog051",
+        "cog052",
+        "cog056",
+        "cog072",
+        "cog081",
+        "cog085",
+        "cog094",
+        "cog096",
+        "cog101",
+        "cog109",
+        "cog121",
+        "cog123",
+        "cog131",
+        "cog142",
+        "cog143",
+        "cog181",
+        "cog195",
+        "cog219",
+        "cog228"
+      ],
+      "evidence": [
+        "docs/Alchemist-Engine.md",
+        "docs/research/integration_analysis.md"
+      ],
+      "decision": "Model diagnostic fusion, ingredient mapping, formulation, and treatment planning as bounded elixir steps in a reactor vessel. Record each input and recipe version, stop on failed constraints, and require reviewed evidence before making efficacy or causal claims. No reasoner is implemented here."
+    },
+    {
+      "id": "feedback",
+      "name": "Fulfillment-to-outcome feedback",
+      "status": "existing",
+      "patterns": [
+        "cog017",
+        "cog025",
+        "cog026",
+        "cog030",
+        "cog064",
+        "cog120",
+        "cog133",
+        "cog168"
+      ],
+      "evidence": [
+        "chain_stage.py",
+        "test_chain_stage.py"
+      ],
+      "decision": "record_outcome links a concern score to a fulfillment_id. When a ledger is configured, the hub validates fulfillment existence and uniqueness before success. Standalone success validates an artifact only; it does not persist or learn from an outcome."
+    },
+    {
+      "id": "attention",
+      "name": "Work scheduling and resource budgets",
+      "status": "deferred",
+      "patterns": [
+        "cog022",
+        "cog028",
+        "cog033",
+        "cog055",
+        "cog103",
+        "cog138",
+        "cog150"
+      ],
+      "evidence": [
+        "docs/Alchemist-Engine.md"
+      ],
+      "decision": "Defer attention allocation, background workers, and queues until there are executable elixir workloads. Then budget provider polling, diagnostic processing, and recipe evaluation separately, with explicit deadlines and cancellation."
+    },
+    {
+      "id": "storage",
+      "name": "Knowledge persistence and versions",
+      "status": "design",
+      "patterns": [
+        "cog019",
+        "cog070",
+        "cog145",
+        "cog169",
+        "cog178",
+        "cog206",
+        "cog232"
+      ],
+      "evidence": [
+        "chain_stage.py",
+        "docs/Alchemist-Engine.md"
+      ],
+      "decision": "Use the existing optional supply-chain hub for committed outcome history. Future diagnostic and elixir stores need schema versions, provenance, retention, and deletion rules; do not put identifiable client histories into the public catalog or a shared learning corpus."
+    },
+    {
+      "id": "provider-contracts",
+      "name": "Provider adapters and event contracts",
+      "status": "design",
+      "patterns": [
+        "cog032",
+        "cog034",
+        "cog040",
+        "cog053",
+        "cog092",
+        "cog102",
+        "cog105",
+        "cog113",
+        "cog122",
+        "cog155",
+        "cog160",
+        "cog164",
+        "cog165",
+        "cog166",
+        "cog189",
+        "cog194",
+        "cog198",
+        "cog201",
+        "cog218",
+        "cog225",
+        "cog230",
+        "cog234",
+        "cog236",
+        "cog237"
+      ],
+      "evidence": [
+        "docs/api/openapi.json",
+        "docs/research/integration_analysis.md",
+        "chain_stage.py"
+      ],
+      "decision": "Normalize Perfect Corp asynchronous results at an adapter boundary; keep provider payloads separate from SkinTwin concern scores. Future MioSalon, marketplace, and ViaGlamour adapters must validate identifiers, units, timestamps, and retries against verified provider contracts. The bundled OpenAPI describes Perfect Corp, not the workbench command."
+    },
+    {
+      "id": "privacy",
+      "name": "Client and tenant access boundaries",
+      "status": "design",
+      "patterns": [
+        "cog036",
+        "cog059",
+        "cog078",
+        "cog117",
+        "cog127",
+        "cog140",
+        "cog152",
+        "cog173",
+        "cog183",
+        "cog188",
+        "cog193",
+        "cog203"
+      ],
+      "evidence": [
+        "docs/research/integration_analysis.md",
+        "chain_stage.py"
+      ],
+      "decision": "Keep client skin images, histories, and preferences scoped to the authorized client and tenant. Future adapters need consent and access enforcement before data fusion. The local command has no authentication or tenant model and must not be exposed as a public service."
+    },
+    {
+      "id": "collaboration",
+      "name": "Research and contributor collaboration",
+      "status": "deferred",
+      "patterns": [
+        "cog043",
+        "cog045",
+        "cog057",
+        "cog058",
+        "cog061",
+        "cog063",
+        "cog068",
+        "cog074",
+        "cog083",
+        "cog084",
+        "cog088",
+        "cog115",
+        "cog136",
+        "cog139",
+        "cog151",
+        "cog159"
+      ],
+      "evidence": [
+        "docs/research/integration_analysis.md"
+      ],
+      "decision": "Use the existing research notes and review workflow to compare diagnostic, salon, marketplace, and manufacturing proposals. Dedicated bots, chat systems, and live collaboration services are deferred until there is a concrete contributor need."
+    },
+    {
+      "id": "onboarding",
+      "name": "Workbench entry points and documentation",
+      "status": "applied",
+      "patterns": [
+        "cog031",
+        "cog060",
+        "cog065",
+        "cog067",
+        "cog069",
+        "cog086",
+        "cog091",
+        "cog098",
+        "cog100",
+        "cog106",
+        "cog110",
+        "cog111",
+        "cog112",
+        "cog125",
+        "cog128",
+        "cog130",
+        "cog134",
+        "cog135",
+        "cog137",
+        "cog149",
+        "cog161",
+        "cog174",
+        "cog221",
+        "cog222",
+        "cog223",
+        "cog242",
+        "cog245",
+        "cog249"
+      ],
+      "evidence": [
+        "README.md",
+        "docs/cog253/README.md",
+        "docs/cog253/application.json"
+      ],
+      "decision": "Link the COG253 catalog and SkinTwin decisions from the repository entry point. Document a local outcome example, validation commands, provider boundaries, and the difference between implemented behavior and future architecture."
+    },
+    {
+      "id": "local-development",
+      "name": "Isolated experimentation",
+      "status": "existing",
+      "patterns": [
+        "cog073",
+        "cog079",
+        "cog104",
+        "cog141",
+        "cog146",
+        "cog154",
+        "cog157",
+        "cog175",
+        "cog177"
+      ],
+      "evidence": [
+        "test_chain_stage.py",
+        "docs/Alchemist-Engine.md"
+      ],
+      "decision": "Exercise outcome validation with synthetic inputs and a temporary ledger for hub integration tests. Keep exploratory elixirs and proposed formula changes isolated from client records and external fulfillment actions."
+    },
+    {
+      "id": "module-structure",
+      "name": "Small Python modules and private helpers",
+      "status": "existing",
+      "patterns": [
+        "cog047",
+        "cog089",
+        "cog132",
+        "cog144",
+        "cog153",
+        "cog167",
+        "cog180",
+        "cog196",
+        "cog204",
+        "cog208",
+        "cog211",
+        "cog220",
+        "cog224",
+        "cog226",
+        "cog235",
+        "cog239",
+        "cog240",
+        "cog241",
+        "cog243",
+        "cog244",
+        "cog246",
+        "cog248"
+      ],
+      "evidence": [
+        "chain_stage.py",
+        "test_chain_stage.py"
+      ],
+      "decision": "Keep respond as the small workbench command boundary, record_outcome as artifact validation, and private locator/commit helpers as the hub bridge. Guard clauses stop invalid requests before dispatch. Extend interfaces only when another real command or adapter needs them."
+    },
+    {
+      "id": "validation",
+      "name": "Validated outcome commands",
+      "status": "applied",
+      "patterns": [
+        "cog197",
+        "cog217",
+        "cog238"
+      ],
+      "evidence": [
+        "chain_stage.py",
+        "test_chain_stage.py"
+      ],
+      "decision": "Reject non-object requests and args with structured errors, normalize decimal score strings, reject unsupported or out-of-range scores, and return a JSON error for malformed CLI input. Invalid requests must never reach the hub or alter a ledger."
+    },
+    {
+      "id": "observability",
+      "name": "Execution inspection and metrics",
+      "status": "design",
+      "patterns": [
+        "cog062",
+        "cog158",
+        "cog176",
+        "cog192",
+        "cog199",
+        "cog229",
+        "cog231",
+        "cog252"
+      ],
+      "evidence": [
+        "docs/Alchemist-Engine.md",
+        "chain_stage.py"
+      ],
+      "decision": "Use structured command success/error responses now. Future reactor monitoring should expose step timings, recipe versions, provider failures, and review decisions without logging skin images or client histories. Dedicated dashboards and debug endpoints are not implemented."
+    },
+    {
+      "id": "configuration",
+      "name": "Optional supply-chain hub",
+      "status": "existing",
+      "patterns": [
+        "cog118",
+        "cog184",
+        "cog185",
+        "cog200",
+        "cog247"
+      ],
+      "evidence": [
+        "chain_stage.py",
+        "test_chain_stage.py"
+      ],
+      "decision": "SKINTWIN_CHAIN_LEDGER enables hub dispatch; SKINTWIN_HUB_ROOT locates a registered hub. Without a ledger, return a validated artifact. With a ledger but no hub, fail explicitly. SKINTWIN_CHAIN_SKIP_DISPATCH is for controlled local validation and does not prove persistence."
+    },
+    {
+      "id": "identity",
+      "name": "SkinTwin identity and personalization",
+      "status": "design",
+      "patterns": [
+        "cog090",
+        "cog182",
+        "cog250",
+        "cog251",
+        "cog253"
+      ],
+      "evidence": [
+        "README.md",
+        "docs/Alchemist-Engine.md"
+      ],
+      "decision": "Retain the elixir, tensor, and reactor vocabulary while keeping concrete data contracts explicit. Future personalization should use consented preferences and reviewed treatment context; it must not silently change concern scores, manufacturing constraints, or evidence requirements."
+    }
+  ]
+}
