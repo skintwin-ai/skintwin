@@ -30,6 +30,7 @@ The workbench integrates with four key pillars of the beauty-tech stack:
 
 ## Documentation
 
+- [COG253 SkinTwin Application](docs/cog253/README.md) — full pattern catalog, ecosystem decisions, and local command checks
 - [Alchemist Engine Specification](docs/Alchemist-Engine.md)
 - [Integration Analysis Report](docs/research/integration_analysis.md)
 - [API Specification](docs/api/openapi.json)
@@ -40,6 +41,10 @@ The workbench integrates with four key pillars of the beauty-tech stack:
 - [ViaGlamour White-Label Manufacturing](docs/research/viaglamour_notes.md)
 - [MioSalon & Welns.io Relationship](docs/research/miosalon_notes.md)
 - [GoBeauty Regional Marketplace](docs/research/gobeauty_notes.md)
+
+The provider integrations and Alchemist Engine below describe the target architecture.
+The current executable component is the local Python outcome command; see the
+[COG253 application guide](docs/cog253/README.md) for its contract and verification.
 
 ## Key Features
 

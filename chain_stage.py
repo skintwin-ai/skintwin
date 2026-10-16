@@ -15,8 +15,12 @@ class StageRejection(ValueError):
 
 def _whole_score(value: object) -> object:
     """A digit string is that integer. A word is left as written."""
-    if isinstance(value, str) and value.strip().isdigit():
-        return int(value.strip())
+    if isinstance(value, str) and value.strip().isdecimal():
+        try:
+            return int(value.strip())
+        except ValueError:
+            # Very long digit strings can exceed Python's conversion limit.
+            return value
     return value
 
 
@@ -32,11 +36,18 @@ def record_outcome(args: dict) -> dict:
     }
 
 
-def respond(body: dict) -> tuple[dict, int]:
+def respond(body: object) -> tuple[dict, int]:
+    if not isinstance(body, dict):
+        return {"ok": False, "error": "request must be an object"}, 400
     if body.get("command") != "record_outcome":
         return {"ok": False, "error": f"unknown command {body.get('command')}"}, 400
+    args = body.get("args")
+    if args is None:
+        args = {}
+    if not isinstance(args, dict):
+        return {"ok": False, "error": "args must be an object"}, 400
     try:
-        artifact = record_outcome(body.get("args") or {})
+        artifact = record_outcome(args)
     except StageRejection as exc:
         return {"ok": False, "error": str(exc)}, 400
     recorded = {"command": "record_outcome", "args": artifact}
@@ -130,7 +141,12 @@ def _locate_script() -> Path | None:
 
 
 def main() -> None:
-    body, status = respond(json.load(sys.stdin))
+    try:
+        request = json.load(sys.stdin)
+    except ValueError:
+        body, status = {"ok": False, "error": "invalid JSON request"}, 400
+    else:
+        body, status = respond(request)
     json.dump(body, sys.stdout)
     if status != 200:
         raise SystemExit(1)
