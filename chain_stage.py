@@ -143,7 +143,7 @@ def _locate_script() -> Path | None:
 def main() -> None:
     try:
         request = json.load(sys.stdin)
-    except ValueError:
+    except (ValueError, RecursionError):
         body, status = {"ok": False, "error": "invalid JSON request"}, 400
     else:
         body, status = respond(request)
